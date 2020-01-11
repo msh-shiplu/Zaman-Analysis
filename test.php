@@ -16,11 +16,33 @@ function parse_company_detail($company_code){
 				else
 					$last_agm=$st;
                                 $agm_flag = false;
+                                print("AGM: ".$last_agm);
                         }
                 }
 		foreach($a->find('tr td') as $x){
                         if (strstr($last, "Day's Range")!==FALSE){
-                                print(trim($x->plaintext));
+                                $days_range = trim($x->plaintext);
+                                print("Days Range: ".$days_range);
+                        }
+                        else if (strstr($last, "52 Weeks' Moving Range")!==FALSE){
+                                $week_range = trim($x->plaintext);
+                                print("Week Range: ".$week_range);
+                        }
+                        else if (strstr($last, "Total No. of Outstanding Securities")!==FALSE){
+                                $total = intval(str_replace(',','',$x->plaintext));
+                                print("Total: ".$total);
+                        }
+                        else if($last == 'Market Lot'){
+                                sscanf($x->plaintext,"%d",$market_lot);
+                                print("market lot: ".$market_lot);
+                        }
+                        else if (strstr($last, "Year End")!==FALSE){
+                                $year_end = trim($x->plaintext);
+                                print("Year end: ".$year_end);
+                        }
+                        else if(strstr($last,'Listing Year')){
+                                sscanf($x->plaintext,"%d",$listing_year);
+                                print("listing year: ".$listing_year);
                         }
                         $last = $x->plaintext;
                 }
