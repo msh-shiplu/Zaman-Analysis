@@ -52,18 +52,30 @@ function parse_company_detail($company_code){
                         else if($percantage && strstr($last,'Share Holding Percentage')){
                                 foreach($x->find('table tr td') as $y){
                                         $st = trim($y->plaintext);
-                                        if (strstr($st, 'Sponsor'))
+                                        if (strstr($st, 'Sponsor')){
                                                 print("Sponsor: ".trim(substr($st, 18))."\n");
-                                        else if(strstr($st, 'Govt'))
+                                                sscanf(substr($st, 18), "%f", $sponsor);
+                                        }
+                                        else if(strstr($st, 'Govt')){
                                                 print("Govt: ".trim(substr($st, 6))."\n");
-                                        else if(strstr($st, "Institute"))
+                                                sscanf(substr($st, 6), "%f", $govt);
+                                        }
+                                        else if(strstr($st, "Institute")){
                                                 print("Inst: ".trim(substr($st, 10))."\n");
-                                        else if(strstr($st, "Foreign"))
+                                                sscanf(substr($st, 10), "%f", $institute);
+                                                $institute = (int)($institute * $total / 100);
+                                        }
+                                        else if(strstr($st, "Foreign")){
                                                 print("Foreign: ".trim(substr($st, 8))."\n");
-                                        else if(strstr($st, "Public"))
+                                                sscanf(substr($st, 8), "%f", $foreign);
+                                        }
+                                        else if(strstr($st, "Public")){
                                                 print("Public: ".trim(substr($st, 8))."\n");
-                                        
+                                                sscanf(substr($st, 8), "%f", $public);
+                                                $public = (int)($public * $total / 100);
+                                        }
                                 }
+                                print($total." ".$public." ".$institute." ".$sponsor." ".$foreign." ".$govt."\n");
                                 $percantage = false;
                         }
                         $last = $x->plaintext;
