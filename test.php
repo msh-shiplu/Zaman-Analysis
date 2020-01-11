@@ -9,7 +9,7 @@ function parse_company_detail($company_code){
                 if ($agm_flag){
                         $st = strstr($a->plaintext, 'Last AGM held on:');
                         if ($st!==FALSE){
-                                print(substr($st,0, 50));
+                                print(substr($st,18, 10));
                                 $agm_flag = false;
                         }
                 }
