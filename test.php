@@ -53,15 +53,15 @@ function parse_company_detail($company_code){
                                 foreach($x->find('table tr td') as $y){
                                         $st = trim($y->plaintext);
                                         if (strstr($st, 'Sponsor'))
-                                                print("Sponsor: ".substr($st, 18)."\n");
+                                                print("Sponsor: ".trim(substr($st, 18))."\n");
                                         else if(strstr($st, 'Govt'))
-                                                print("Govt: ".substr($st, 6)."\n");
+                                                print("Govt: ".tim(substr($st, 6))."\n");
                                         else if(strstr($st, "Institute"))
-                                                print("Inst: ".substr($st, 10)."\n");
+                                                print("Inst: ".trim(substr($st, 10))."\n");
                                         else if(strstr($st, "Foreign"))
-                                                print("Foreign: ".substr($st, 8)."\n");
+                                                print("Foreign: ".trim(substr($st, 8))."\n");
                                         else if(strstr($st, "Public"))
-                                                print("Public: ".substr($st, 8)."\n");
+                                                print("Public: ".trim(substr($st, 8))."\n");
                                         
                                 }
                                 $percantage = false;
