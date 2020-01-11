@@ -6,7 +6,11 @@ function parse_company_detail($company_code){
 	$last = '';
 	$agm_flag = true;
 	foreach($html->find("#company") as $a){
-		print($a->plaintext);
+		foreach($a->find('tr td') as $x){
+                        if (strstr($x->plaintext, "Day's Range")!==FALSE){
+                                print($x->plaintext)
+                        }
+                }
 	}
 	// $last = '';
 	// $html->clear();
