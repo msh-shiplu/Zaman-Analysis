@@ -101,6 +101,14 @@ function parse_company_detail($company_code){
         }
         print($pe1[0]." ".$pe1[1]."\n");
         print($pe2[0]." ".$pe2[1]."\n");
+
+        foreach($html->find("#company") as $a){
+                foreach($a->find('tr th') as $x){
+                        $st = trim($x->plaintext);
+                        if (strstr($st, 'Company Name:'))
+                                print($st);
+                }
+        }
 	// $last = '';
 	// $html->clear();
 	// $html = file_get_html('http://dsebd.org/company_details_nav.php?name='.$company_code);
