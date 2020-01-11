@@ -55,7 +55,7 @@ function parse_company_detail($company_code){
                                 if ($st == '-')
                                         $val = 0;
                                 else
-                                        $val = int($st);
+                                        $val = (int)$st;
                                 $pe1[] = $val;
                         }
                         else if(strstr($last, 'Current P/E ratio using Diluted EPS')){
@@ -63,7 +63,7 @@ function parse_company_detail($company_code){
                                 if ($st == '-')
                                         $val = 0;
                                 else
-                                        $val = int($st);
+                                        $val = (int)$st;
                                 $pe2[] = $val;
                         }
                         else if($percantage && strstr($last,'Share Holding Percentage')){
