@@ -1,0 +1,7 @@
+CRON_TZ='Asia/Dhaka'
+*/3     10-15   *       *       0-4     php /var/www/html/parse_insert2.php >/dev/null 2>&1
+*/4     10-15   *       *       0-4     php /var/www/html/parse_extra.php >/dev/null 2>&1
+29,59   10-15   *       *       0-4     php /var/www/html/hourly_update.php >/dev/null 2>&1
+0       8       *       *       0-4     php /var/www/html/company_list_industry.php >/dev/null 2>&1
+45      9,16    *       *       0-4     php /var/www/html/parse_insert3.php >/dev/null 2>&1                             
+30      9       *       *       0-4     php /var/www/html/delete_index_list.php >/dev/null 2>&1
