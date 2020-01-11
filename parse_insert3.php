@@ -145,7 +145,7 @@ function parse_company_detail($company_code){
 	//	echo $query."\n";
 	}
 	else{
-		$query = "insert into stock_data values('$company_code',$company_name, $pe1[0], $pe2[0],$pe1[1], $pe2[1]);";
+		$query = "insert into stock_data values('$company_code','$company_name', $pe1[0], $pe2[0],$pe1[1], $pe2[1]);";
 		mysql_query($query);
 	}
 	if(mysql_error()){
