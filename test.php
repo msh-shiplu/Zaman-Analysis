@@ -4,12 +4,13 @@ function parse_company_detail($company_code){
 	//echo $company_code."\n";
 	$html = file_get_html('http://dsebd.org/company_details_nav.php?name='.$company_code);
 	$last = '';
-	$agm_flag = true;
+        $agm_flag = true;
 	foreach($html->find("#company") as $a){
 		foreach($a->find('tr td') as $x){
-                        if (strstr($x->plaintext, "Day's Range")!==FALSE){
-                                print($x->plaintext);
+                        if (strstr($last, "Day's Range")!==FALSE){
+                                print(trim($x->plaintext));
                         }
+                        $last = $x->plaintext;
                 }
 	}
 	// $last = '';
