@@ -55,7 +55,7 @@ function parse_company_detail($company_code){
                                         if (strstr($st, 'Sponsor'))
                                                 print("Sponsor: ".trim(substr($st, 18))."\n");
                                         else if(strstr($st, 'Govt'))
-                                                print("Govt: ".tim(substr($st, 6))."\n");
+                                                print("Govt: ".trim(substr($st, 6))."\n");
                                         else if(strstr($st, "Institute"))
                                                 print("Inst: ".trim(substr($st, 10))."\n");
                                         else if(strstr($st, "Foreign"))
