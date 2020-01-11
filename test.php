@@ -6,6 +6,7 @@ function parse_company_detail($company_code){
 	$last = '';
         $agm_flag = true;
         $percantage = true;
+        $pecount1 = 0;
 	foreach($html->find("#company") as $a){
                 if ($agm_flag){
                         $st = strstr($a->plaintext, 'Last AGM held on:');
@@ -49,28 +50,44 @@ function parse_company_detail($company_code){
                                 $category = trim($x->plaintext);
                                 print("Category: ".$category."\n");
                         }
+                        else if(strstr($last, 'Current P/E Ratio using Basic EPS')){
+                                $st = trim($x->parent()->last_child()->plaintext);
+                                if ($st == '-')
+                                        $val = 0;
+                                else
+                                        $val = int($st);
+                                $pe1[] = $val;
+                        }
+                        else if(strstr($last, 'Current P/E ratio using Diluted EPS')){
+                                $st = trim($x->parent()->last_child()->plaintext);
+                                if ($st == '-')
+                                        $val = 0;
+                                else
+                                        $val = int($st);
+                                $pe2[] = $val;
+                        }
                         else if($percantage && strstr($last,'Share Holding Percentage')){
                                 foreach($x->find('table tr td') as $y){
                                         $st = trim($y->plaintext);
                                         if (strstr($st, 'Sponsor')){
-                                                print("Sponsor: ".trim(substr($st, 18))."\n");
+                                                // print("Sponsor: ".trim(substr($st, 18))."\n");
                                                 sscanf(substr($st, 18), "%f", $sponsor);
                                         }
                                         else if(strstr($st, 'Govt')){
-                                                print("Govt: ".trim(substr($st, 6))."\n");
+                                                // print("Govt: ".trim(substr($st, 6))."\n");
                                                 sscanf(substr($st, 6), "%f", $govt);
                                         }
                                         else if(strstr($st, "Institute")){
-                                                print("Inst: ".trim(substr($st, 10))."\n");
+                                                // print("Inst: ".trim(substr($st, 10))."\n");
                                                 sscanf(substr($st, 10), "%f", $institute);
                                                 $institute = (int)($institute * $total / 100);
                                         }
                                         else if(strstr($st, "Foreign")){
-                                                print("Foreign: ".trim(substr($st, 8))."\n");
+                                                // print("Foreign: ".trim(substr($st, 8))."\n");
                                                 sscanf(substr($st, 8), "%f", $foreign);
                                         }
                                         else if(strstr($st, "Public")){
-                                                print("Public: ".trim(substr($st, 8))."\n");
+                                                // print("Public: ".trim(substr($st, 8))."\n");
                                                 sscanf(substr($st, 8), "%f", $public);
                                                 $public = (int)($public * $total / 100);
                                         }
@@ -78,9 +95,12 @@ function parse_company_detail($company_code){
                                 print($total." ".$public." ".$institute." ".$sponsor." ".$foreign." ".$govt."\n");
                                 $percantage = false;
                         }
+                        
                         $last = $x->plaintext;
                 }
-	}
+        }
+        print($pe1);
+        print($pe2);
 	// $last = '';
 	// $html->clear();
 	// $html = file_get_html('http://dsebd.org/company_details_nav.php?name='.$company_code);
