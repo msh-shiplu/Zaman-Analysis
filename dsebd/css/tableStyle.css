@@ -1,0 +1,87 @@
+
+a:hover
+{ text-decoration: none;}
+#menubar
+{ width: 100%;
+  height: 100px;
+  background: #B29E74;
+  background: -moz-linear-gradient(#B29E74, #9D8759);
+  background: -o-linear-gradient(#B29E74, #9D8759);
+  background: -webkit-linear-gradient(#B29E74, #9D8759);
+  border-radius: 0px 0px 15px 15px;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -webkit-border: 0px 0px 15px 15px;} 
+
+#footer
+{ width: 100%;
+  height: 50px;
+  background: #B29E74;
+  background: -moz-linear-gradient(#B29E74, #9D8759);
+  background: -o-linear-gradient(#B29E74, #9D8759);
+  background: -webkit-linear-gradient(#B29E74, #9D8759);
+/*  border-radius: 0px 0px 15px 15px;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -webkit-border: 0px 0px 15px 15px;*/} 
+  
+#welcome
+{ width: 350px;
+  float: left;
+  height: 45px;
+  padding: 5px 0 0 10px;
+  margin: 0 auto;
+  background: transparent;}  
+#copyright
+{ width: 350px;
+  float: center;
+  height: 45px;
+  padding: 5px 0 0 10px;
+  margin: 0 auto;
+  font-size: 18;
+  color: white;
+  background: transparent;}
+
+#welcome h1 a
+{ font: normal 150% Arial, Helvetica, sans-serif;
+  letter-spacing: -3px;
+  color: #FFF;
+  text-decoration: none;
+  text-shadow: 1px 1px #000;}
+  
+#menu_items
+{ float: right;
+  width: 560px;}
+  
+ul#menu
+{ margin:0;
+  float: right;}
+
+ul#menu li
+{ padding: 0 0 0 0px;
+  list-style: none;
+  margin: 2px 0 0 0;
+  display: inline;
+  background: transparent;}
+
+ul#menu li a
+{ float: left;
+  font: bold 120% Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  height: 24px;
+  text-shadow: 1px 1px #000;
+  padding: 16px 15px 10px 15px;
+  background: transparent; } 
+  
+ul#menu li.current a, ul#menu li:hover a
+{ color: #2F291D;
+  text-shadow: 0px 1px 0px #FFF;}
+
+.pure-table{border-collapse:collapse;border-spacing:0;empty-cells:show;border:1px solid #cbcbcb; text-align:center;}
+.pure-table caption{color:#000;font:italic 100%/1 arial,sans-serif;padding:1em 0;text-align:center}
+.pure-table td,.pure-table th{border-left:1px solid #cbcbcb;border-width:0 0 0 1px;font-size:inherit;margin:0;overflow:visible;padding: 15px; width:100px}
+.pure-table td:first-child,.pure-table th:first-child{border-left-width:0}
+.pure-table thead{background:#e0e0e0;color:#000;text-align:center;vertical-align:center}
+.pure-table td{background-color:transparent}
+.pure-table-odd td{background-color:#f2f2f2}
+.pure-table tr{height:50px}

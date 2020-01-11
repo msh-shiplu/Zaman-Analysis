@@ -1,0 +1,160 @@
+\begin{thebibliography}{10}
+
+\bibitem{dynmoga1}
+S.~Asur, S.~Parthasarathy, and D.~Ucar.
+\newblock {An event-based framwork for characterizing the evolutionary behavior
+  of interaction graphs}.
+\newblock In {\em {ACM Transaction on Knowledge Discovery from Data}}, volume~3
+  of {\em 16}, pages 554--560. ACM, 2006.
+
+\bibitem{chakrabarti}
+D.~Chakrabarti, R.~Kumar, and A.~Tomkins.
+\newblock Evolutionary clustering.
+\newblock In T.~Eliassi-Rad, L.~H. Ungar, M.~Craven, and D.~Gunopulos, editors,
+  {\em KDD}, pages 554--560. ACM, 2006.
+
+\bibitem{dynmoga3}
+Y.~Chi, D.~Zhou, X.~Song, K.~Hino, and B.~Tseng.
+\newblock {Evolutionary spectral clustering by incorporating temporal
+  smoothness}.
+\newblock In {\em Proc. of the International Conference on Knowledge Discovery
+  and Data Mining, (KDD'07)}, pages 153--162, 2007.
+
+\bibitem{spea}
+Z.~E and T.~L.
+\newblock Multiobjective evolutionary algorithms: a comparative case study and
+  the strength pareto approach.
+\newblock pages 257--271, 1999.
+
+\bibitem{dynmoga9}
+M.~Ehrgott.
+\newblock {Multicriteria Optimization}.
+\newblock Berlin,Germany, 2005. Springer.
+
+\bibitem{dynmoga}
+F.~Folino and C.~Pizzuti.
+\newblock A multiobjective and evolutionary clustering method for dynamic
+  networks.
+\newblock Institute for High Performance Computing and Networking (ICAR) and
+  Italian National Research Council, 2010.
+
+\bibitem{goldberg}
+D.~E. Golberg and K.~Deb.
+\newblock {A Comparative Analysis of Selection Scheme used in GAs}.
+\newblock In {\em {G. Rawlins (Ed.), Foundations of GAs (FOGA), San Mateo, CA:
+  Morgan Kaufmann}}, pages 69--93, 1991.
+
+\bibitem{npga}
+H.~J., Nafpliotis, and G.~DE.
+\newblock A niched pareto genetic algorithm for multiobjective optimization.
+\newblock In {\em Proc. of the first IEEE conference on evolutionary
+  computation. IEEE world congress on computational intelligence}, Orlando, FL,
+  USA, June 1994.
+
+\bibitem{jain}
+A.~K. Jain, M.~Murty, and P.~Flynn.
+\newblock {Data Clustering }.
+\newblock In {\em {ACM Comuting Surveys}}, volume~31, pages 264--296, 1999.
+
+\bibitem{vega}
+S.~JD.
+\newblock Multiple objective optimization with vector evaluated genetic
+  algorithms.
+\newblock In {\em Proc. of the international conference on genetic algorithm
+  and their applications}, 1985.
+
+\bibitem{nsga2}
+D.~K, A.~S, P.~A, and M.~T.
+\newblock A fast elitist non-dominated sorting genetic algorithm for
+  multi-objective optimization: Nsga-ii.
+\newblock In {\em Proc. of 6th international conference on parallel problem
+  solving on nature}, Paris,France, September 2000. Springer.
+
+\bibitem{dynmoga12}
+M.~Kim and J.~Han.
+\newblock {A particle-and-density based evolutionary clustering method for
+  dynamic networks}.
+\newblock In {\em Proc. of the International Conference on Very Large
+  Databases,(VLDB'09)}, 2009.
+
+\bibitem{dynmoga13}
+R.~Kumar, J.~Novak, and A.~Tomkins.
+\newblock {Structure and evolution of online social networks}.
+\newblock In {\em Proc. of the International Conference on Knowledge Discovery
+  and Data Mining, (KDD'06)}, pages 611--717, 2006.
+
+\bibitem{dynmoga14}
+L.~Leskovec, J.~Kleinberg, and C.~Faloutsos.
+\newblock {Graphs over time: densification laws, shrinking diameters and
+  possible explanations}.
+\newblock In {\em Proc. of the International Conference on Knowledge Discovery
+  and Data Mining, (KDD'05)}, pages 177--187, 2005.
+
+\bibitem{dynmoga15}
+Y.-R. Lin, S.~Zhu, H.~Sundaram, and B.~L. Tseng.
+\newblock Facetnet: A framework for analyzing communities and their evolutions
+  in dynamic networks.
+\newblock In {\em Proc. of the International World Wide Web Conference
+  (WWW'08)}, pages 685--694, 2008.
+
+\bibitem{nsga}
+S.~N. and D.~K.
+\newblock Multiobjective optimization using non-dominated sorting in genetic
+  algorithms.
+\newblock 1994.
+
+\bibitem{dynmoga16}
+M.~Newman and M.~Girvan.
+\newblock Finding and evaluating community structure in networks.
+\newblock In {\em Physical Review E}, volume~69, pages 6113--6127, 2004.
+
+\bibitem{wbga}
+H.~P and lin C-y.
+\newblock Genetic search strategies in multicriterion optimal design.
+\newblock pages 99--107, 1992.
+
+\bibitem{dynmoga19}
+C.~Pizzuti.
+\newblock Ga-net: a genetic algorithm for community detection in social
+  networks.
+\newblock In {\em Proc. of 10th International Conference on Parallel Problem
+  Solving from Nature}, pages 1081--1090, 2008.
+
+\bibitem{dynmoga21}
+C.~Pizzuti.
+\newblock A multi-objective genetic algorithm for community detection in
+  networks.
+\newblock In {\em Proc. of the 121st IEEE International Conference on Tools
+  with Artificial Intelligence (ICTAI 2009)}, pages 379--386, 2009.
+
+\bibitem{dynmoga23}
+J.~Sun, C.~Faloutsos, S.~Papadimitriou, and P.~Yu.
+\newblock Graphscope:parameter-free of large time evolving-graphs.
+\newblock In {\em Proc. International Conference on Knowledge Discovery and
+  Data Mining (KDD’05)}, pages 687--696, 2005.
+
+\bibitem{dynmoga24}
+L.~Tang, H.~Liu, J.~Zhang, and Z.~Nazeri.
+\newblock Community evolution in dynamic multi-mode networks.
+\newblock In {\em Proc. International Conference on Knowledge Discovery and
+  Data Mining (KDD’07)}, pages 677--685, 2007.
+
+\bibitem{dynmoga25}
+T.~Xu, Z.~Zhang, P.~S. Yu, and B.~Long.
+\newblock Dirichlet process based evolutionary clustering.
+\newblock In {\em Proc. of the 8th IEEE International Conference on Data Mining
+  (ICDM’08)}, pages 648--657, 2008.
+
+\bibitem{dynmoga26}
+T.~Xu, Z.~Zhang, P.~S. Yu, and B.~Long.
+\newblock Evolutionary clustering by hierarchical dirichlet process with hidden
+  markov state.
+\newblock In {\em Proc. of the 8th IEEE International Conference on Data Mining
+  (ICDM’08)}, pages 658--667, 2008.
+
+\bibitem{spea2}
+E.~Zitzler, M.~Laumanns, and L.~Thiele.
+\newblock {SPEA2: Improving the Strength Pareto Evolutionary Algorithm}.
+\newblock Zurich, Switzerland, 2001.
+
+\end{thebibliography}

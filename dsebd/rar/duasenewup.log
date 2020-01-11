@@ -1,0 +1,897 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2015.2.10)  11 FEB 2015 12:35
+entering extended mode
+ %&-line parsing enabled.
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
+de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
+{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
+documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
+ tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode .a.b.c.\input  duasenewup.t
+ex
+(./duasenewup.tex (./arsubmit.cls
+Document Class: arsubmit 1999/01/07 v1.4a Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size12.clo
+File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 90.
+
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)))
+(/usr/share/texmf/tex/generic/tex4ht/tex4ht.sty
+version 2008-08-07-16:03
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks14
+)
+(/usr/share/texmf/tex/generic/tex4ht/usepackage.4ht
+version 2008-09-16-11:44
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf/tex/latex/moreverb/moreverb.sty
+Package: moreverb 1997/12/07 v2.2d.2 `more' verbatim facilities
+
+(/usr/share/texmf/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks16
+\verbatim@line=\toks17
+\verbatim@in@stream=\read1
+)
+\verbatim@out=\write3
+\tab@position=\count87
+\tab@size=\count88
+\listing@line=\count89
+)
+(/usr/share/texmf/tex/latex/tools/array.sty
+Package: array 2005/08/23 v2.4b Tabular extension package (FMi)
+\col@sep=\dimen105
+\extrarowheight=\dimen106
+\NC@list=\toks18
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+(/usr/share/texmf/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip45
+\subfigcapskip=\skip46
+\subfigcaptopadj=\dimen107
+\subfigbottomskip=\skip47
+\subfigcapmargin=\dimen108
+\subfiglabelskip=\skip48
+\c@subfigure=\count90
+\c@lofdepth=\count91
+\c@subtable=\count92
+\c@lotdepth=\count93
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip49
+\subfig@bottom=\skip50
+)
+(/usr/share/texmf/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texmf/tex/latex/algorithms/algorithm.sty
+Package: algorithm 
+
+Document Style `algorithm' - floating environment
+(/usr/share/texmf/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count94
+\float@exts=\toks19
+\float@box=\box26
+\@float@everytoks=\toks20
+\@floatcapt=\box27
+)
+(/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks21
+\c@algorithm=\count95
+)
+
+! LaTeX Error: File `algpseudocode.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/share/texmf/tex/generic/tex4ht/tex4ht.4ht
+version 2008-06-23-09:47
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (/usr/share/texmf/tex/generic/tex4ht/tex4ht.sty
+version 2008-08-07-16:03
+
+--- needs --- tex4ht duasenewup ---
+\tmp:cnt=\count96
+\openout15 = `duasenewup.tmp'.
+
+(./duasenewup.tmp)
+\tmp:dim=\skip51
+--------------------------------------
+--- Note --- for XML code, use the command line option `xml' or `xhtml'
+--------------------------------------
+ (./duasenewup.xref)
+\:refout=\write4
+\openout4 = `duasenewup.xref'.
+
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+--------------------------------------
+--- Note --- for alternative charset, use the command line option `charset=...'
+
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: html
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+)
+\:tokwrite=\toks22
+\:tokpage=\toks23
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `duasenewup.4ct'.
+
+\:tocout=\write5
+\openout5 = `duasenewup.4tc'.
+
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/latex.4ht
+version 2008-09-16-11:44
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `li-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(/usr/share/texmf/tex/generic/tex4ht/fontmath.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/graphics.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/dvips.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/graphicx.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/moreverb.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/verbatim.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/array.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+))
+(/usr/share/texmf/tex/generic/tex4ht/subfigure.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/alltt.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/algorithm.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/float.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/ifthen.4ht
+version 2008-09-16-11:44
+
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+))
+(/usr/share/texmf/tex/generic/tex4ht/html4.4ht
+version 2008-09-06-23:50
+)
+(/usr/share/texmf/tex/generic/tex4ht/html4-math.4ht
+version 2008-09-06-23:50
+)) (./duasenewup.aux)
+\openout1 = `duasenewup.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+--- file duasenewup.css ---
+
+[1
+
+] [2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 22.
+ [3]
+
+LaTeX Warning: Citation `jain' on page 4 undefined on input line 33.
+
+
+LaTeX Warning: Citation `dynmoga1' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga3' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga12' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga13' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga14' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga15' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga21' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga23' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga24' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga25' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga26' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga3' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga12' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga15' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `dynmoga24' on page 4 undefined on input line 37.
+
+
+LaTeX Warning: Citation `chakrabarti' on page 4 undefined on input line 37.
+
+[4]
+
+LaTeX Warning: Citation `spea2' on page 5 undefined on input line 39.
+
+
+LaTeX Warning: Citation `vega' on page 5 undefined on input line 43.
+
+
+LaTeX Warning: Citation `npga' on page 5 undefined on input line 43.
+
+
+LaTeX Warning: Citation `wbga' on page 5 undefined on input line 43.
+
+
+LaTeX Warning: Citation `nsga' on page 5 undefined on input line 43.
+
+
+LaTeX Warning: Citation `spea' on page 5 undefined on input line 43.
+
+
+LaTeX Warning: Citation `dynmoga' on page 5 undefined on input line 45.
+
+
+LaTeX Warning: Citation `nsga2' on page 5 undefined on input line 45.
+
+
+LaTeX Warning: Citation `nsga' on page 5 undefined on input line 45.
+
+
+LaTeX Warning: Citation `spea2' on page 5 undefined on input line 47.
+
+
+LaTeX Warning: Citation `dynmoga' on page 5 undefined on input line 47.
+
+[5]
+
+LaTeX Warning: Citation `dynmoga' on page 6 undefined on input line 55.
+
+
+LaTeX Warning: Citation `dynmoga' on page 6 undefined on input line 61.
+
+
+LaTeX Warning: Citation `dynmoga9' on page 6 undefined on input line 61.
+
+l. 63 Writing duasenewup.idv[1] (duasenewup0x.png)
+[6]
+l. 65 Writing duasenewup.idv[2] (duasenewup1x.png)
+
+
+LaTeX Warning: Citation `dynmoga19' on page 7 undefined on input line 70.
+
+l. 71 Writing duasenewup.idv[3] (duasenewup2x.png)
+[7]
+l. 74 Writing duasenewup.idv[4] (duasenewup3x.png)
+l. 78 Writing duasenewup.idv[5] (duasenewup4x.png)
+ [8]
+l. 86 Writing duasenewup.idv[6] (duasenewup5x.png)
+ [9] [10] [11] [12
+
+]
+
+! LaTeX Error: File `graph' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \includegraphics[width=0.5\textwidth]{graph}
+                                                  
+? 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 104.
+
+(/usr/share/texmf/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 104.
+ [13
+
+]
+l. 113 Writing duasenewup.idv[7] (duasenewup6x.png)
+ [14
+
+]
+l. 120 Writing duasenewup.idv[8] (duasenewup7x.png)
+ [15] [16] [17
+
+] [18
+
+]
+[19
+
+] [20
+
+]
+
+! LaTeX Error: Environment algorithmic undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \begin{algorithmic}
+                         [1]
+? 
+! Undefined control sequence.
+l.159 \Procedure
+                {NECAMO}{$\mathcal{N} = \{\mathcal{N}^1,\ldots,\mathcal{N}^T...
+
+? 
+! Undefined control sequence.
+l.161 \State
+             Generate initial cluster $\mathcal{CR}_1 = \{C_1^1,\ldots,C_k^1...
+
+? 
+! Undefined control sequence.
+l.162 \State
+             let $t = 2$
+? 
+! Undefined control sequence.
+l.165 \While
+            {$t \leq T$}
+? 
+! Undefined control sequence.
+l.166 \State
+             Create initial population of random individual $P_0$ and set $E...
+
+? 
+! Undefined control sequence.
+l.167 \While
+            {$\Delta f(v) \ge 10^{-5}$}
+? 
+! Undefined control sequence.
+l.168 \State
+             Select individuals from $E_i$ for mating pool using binary tour...
+
+? 
+! Undefined control sequence.
+l.169 \State
+             Apply crossover and mutation to create $N_P$ offspring solution...
+
+? 
+! Undefined control sequence.
+l.170 \State
+             Decode each individual of $P_i \cup E_i$ \label{decode}
+? 
+! Undefined control sequence.
+l.171 \State
+             Evaluate each individual of $P_i \cup E_i$  and assign fitness ...
+
+? 
+! Undefined control sequence.
+l.173 \State
+             Copy all non-dominated solutions to $E_{i+1}$
+? 
+! Undefined control sequence.
+l.174 \If
+          {$|E_{i+1}| > N_E$}
+? 
+! Undefined control sequence.
+l.175 \State
+             truncate $|E_{i+1}| - N_E$ solutions according to maximum densi...
+
+? 
+! Undefined control sequence.
+l.176 \Else
+           
+? 
+! Undefined control sequence.
+l.177 \State
+             copy best $N_E - |E_{i+1}|$ dominated solutions according to th...
+
+? 
+! Undefined control sequence.
+l.178 \EndIf
+            
+? 
+! Undefined control sequence.
+l.179 \State
+              Set $i = i +1$
+? 
+! Undefined control sequence.
+l.180 \EndWhile
+               
+? 
+! Undefined control sequence.
+l.181 \State
+             $C_t = E$ with highest modularity
+? 
+! Undefined control sequence.
+l.182 \State
+             Set $t = t +1$
+? 
+! Undefined control sequence.
+l.183 \EndWhile
+               
+? 
+! Undefined control sequence.
+l.184 \State
+             Return the clustering set $C$ with best cluster. \label{last}
+? 
+! Undefined control sequence.
+l.185 \EndProcedure
+                   
+? 
+
+! LaTeX Error: \begin{algorithm} on input line 155 ended by \end{algorithmic}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 \end{algorithmic}
+                       
+? 
+[21
+
+]
+
+LaTeX Warning: Citation `dynmoga16' on page 22 undefined on input line 191.
+
+l. 192 Writing duasenewup.idv[9] (duasenewup8x.png)
+
+LaTeX Warning: Citation `dynmoga' on page 22 undefined on input line 198.
+
+
+LaTeX Warning: Citation `goldberg' on page 22 undefined on input line 199.
+
+[22
+
+]
+
+LaTeX Warning: Citation `dynmoga' on page 23 undefined on input line 203.
+
+[23] [24
+
+]
+
+! LaTeX Error: File `zout3NMI' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 ...degraphics[width=0.5\textwidth]{zout3NMI}
+                                                  }
+? 
+
+! LaTeX Error: File `zout5NMI' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.210 ...degraphics[width=0.5\textwidth]{zout5NMI}
+                                                  }
+? 
+[25
+
+] [26
+
+] [27
+
+]
+
+! LaTeX Error: File `zout3NMIvar' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.217 ...raphics[width=0.5\textwidth]{zout3NMIvar}
+                                                  }
+? 
+
+! LaTeX Error: File `zout5NMIvar' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 ...raphics[width=0.5\textwidth]{zout5NMIvar}
+                                                  }
+? 
+[28
+
+] [29
+
+] [30
+
+]
+
+! LaTeX Error: File `synth-modul' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.225 ...raphics[width=0.5\textwidth]{synth-modul}
+                                                  
+? 
+[31
+
+]
+
+LaTeX Warning: Citation `dynmoga' on page 32 undefined on input line 230.
+
+
+LaTeX Warning: Citation `dynmoga' on page 32 undefined on input line 230.
+
+
+LaTeX Warning: Citation `dynmoga' on page 32 undefined on input line 231.
+
+
+LaTeX Warning: Citation `dynmoga' on page 32 undefined on input line 231.
+
+--- file duasenewup2.html ---
+[32
+
+
+] [33
+
+]
+
+! LaTeX Error: File `real-data-NMI' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...phics[width=0.5\textwidth]{real-data-NMI}
+                                                  }
+? 
+
+! LaTeX Error: File `real-modul' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...graphics[width=0.5\textwidth]{real-modul}
+                                                  }
+? 
+[34
+
+]
+
+LaTeX Warning: Citation `dynmoga' on page 35 undefined on input line 242.
+
+No file duasenewup.bbl.
+[35
+
+] (./duasenewup.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4293 strings out of 256217
+ 48196 string characters out of 1917095
+ 221959 words of memory out of 1500000
+ 7453 multiletter control sequences out of 10000+200000
+ 10794 words of font info for 38 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 25i,9n,27p,1581b,448s stack positions out of 5000i,500n,6000p,200000b,15000s
+
+Output written on duasenewup.dvi (35 pages, 70256 bytes).

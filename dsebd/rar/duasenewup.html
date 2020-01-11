@@ -1,0 +1,1302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html --> 
+<meta name="src" content="duasenewup.tex"> 
+<meta name="date" content="2015-02-11 12:35:00"> 
+<link rel="stylesheet" type="text/css" href="duasenewup.css"> 
+</head><body 
+>
+<!--l. 22--><p class="noindent" >
+
+<!--l. 22--><p class="indent" >
+
+<div class="center" 
+>
+<!--l. 22--><p class="noindent" >
+<!--l. 22--><p class="noindent" ><span 
+class="cmr-17x-x-120">NECAMO - New Evolutionary Clustering Algorithm using</span>
+<span 
+class="cmr-17x-x-120">Multiobjective Optimization</span>
+<div class="tabular"> <table id="TBL-1" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-1-1-1"  
+class="td11"> <span 
+class="cmr-12x-x-120">Md. Shiplu Hawlader</span> <sup><span 
+class="cmr-10">1</span></sup><span 
+class="cmr-12x-x-120">, Kaynat Quayyum</span> <sup><span 
+class="cmr-10">1</span></sup> <span 
+class="cmr-12x-x-120">and Saifuddin Md. Tareeq</span> <sup><span 
+class="cmr-10">1</span></sup><span 
+class="cmsy-10x-x-144">*</span><span 
+class="cmmi-12x-x-120">&#x00A0; </span></td></tr></table>
+</div>
+<!--l. 22--><p class="noindent" ><sup><span 
+class="cmr-10">1</span></sup><span 
+class="cmr-12x-x-120">Department of Computer Science and Engineering</span><br />
+<span 
+class="cmr-12x-x-120">University of Dhaka, Dhaka 1000, Bangladesh</span><br />
+<span 
+class="cmti-12x-x-120">shiplu.cse.du@gmail.com , smtareeq@cse.univdhaka.edu</span>
+<!--l. 22--><p class="indent" >   <span 
+class="cmsy-10x-x-120">*</span>to whom correspondence should be addressed
+<div class="center" 
+>
+<!--l. 23--><p class="noindent" >
+<!--l. 23--><p class="noindent" ><span 
+class="cmbx-10x-x-109">Abstract</span></div>
+         <span 
+class="cmr-10x-x-109">Evolutionary clustering in dynamic networks is the process of generating a sequence of clusters</span>
+      <span 
+class="cmr-10x-x-109">to  capture  the  true  nature  of  evolution  in  interactions  among  individuals.  There  are  several</span>
+      <span 
+class="cmr-10x-x-109">different  approaches  to  solve  the  evolutionary  clustering  problem  and  a  relatively  new  one  is</span>
+      <span 
+class="cmr-10x-x-109">the multiobjective optimization using genetic algorithms. In this paper, we have proposed a new</span>
+      <span 
+class="cmr-10x-x-109">evolutionary clustering algorithm using multiobjective optimization or NECAMO. Experimental</span>
+      <span 
+class="cmr-10x-x-109">results on real and synthetic data show that the proposed algorithm provides better accuracy</span>
+
+      <span 
+class="cmr-10x-x-109">compared to previous algorithms in terms of the two relevant parameters - accuracy of clustering</span>
+      <span 
+class="cmr-10x-x-109">with respect to current data and drift from the clusters found from previous steps. </span><br 
+class="newline" /><br 
+class="newline" /><span 
+class="cmti-10x-x-109">Keywords: Genetic Algorithms, Multiobjective Optimization, Data Mining, Clustering, Dynamic</span>
+      <span 
+class="cmti-10x-x-109">Networks.</span>
+<a 
+ id="x1-2r1"></a>
+<!--l. 32--><p class="noindent" ><span 
+class="cmbx-12x-x-144">1</span>    <span 
+class="cmbx-12x-x-144">Introduction</span>
+<a 
+ id="Q1-1-0"></a>
+<!--l. 33--><p class="indent" >   Individuals or objects are logically connected in networks, either densely, or sparsely. The dense group can
+be defined as a cluster or community. Clustering is the organization of data patterns into groups based on some
+measures of similarities or logical connections <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. The study of real world dynamic networks is a
+growing scientific field that combines traditional social network analysis (SNA), link analysis (LA)
+and multi-agent systems (MAS) within network science and network theory. Most of the complex
+dynamic networks can be modeled as graphs, where nodes represent individual objects and edges
+represent relation among those individuals. The dynamic behavior of the network can be imposed by
+keeping a set of graphs for a particular time window. Each static graph in the set corresponds to the
+network for a particular timestamp. The proximity between individuals can be modeled by putting
+weight in the edges. The uncertainty however can be established in the transformation of graphs
+over times. Dynamic network analysis leads to finding pattern in the clustering of a community.
+Hence, this type of analysis can be beneficial for numerous entities like social network developers,
+telecommunication operators or for detecting the group of individuals responsible for spamming or junk
+emails.
+<!--l. 37--><p class="indent" >   Many approaches have been proposed for the analysis and temporal evolution of dynamic networks in <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>,
+<span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. To catch the evolution of clusters in dynamic network with temporal
+data, some of these methods <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, <span class="cite">[<span 
+class="cmbx-12">?</span>]</span> employ the concept of Chakrabarti <span 
+class="cmti-12">et. al. </span>in <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. These methods
+produce a sequence of clusters by introducing a framework called temporal smoothness. This framework
+assumes that abrupt changes of clustering in a short time period are not desirable, thus it smooth each
+community over time. Smoothness is defined by trading-off between two competing criteria. <span 
+class="cmti-12">Snapshot cost</span>,
+which means that the clustering should reflect as nearly as possible the current time steps coming data. And
+<span 
+class="cmti-12">temporal cost</span>, which means that each clustering should not change dramatically from the previous time
+
+steps.
+<!--l. 39--><p class="indent" >   In this paper we have proposed NECAMO algorithm which implements similar concept as <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, but with an
+improved fitness assignment scheme. The proposed algorithm performs better in terms of accuracy with respect
+to previous algorithms. The result is supported by experimentation with synthetic and real data. In the
+following sections we will elaborate the proposed algorithm.
+<!--l. 41--><p class="indent" >
+<a 
+ id="x1-3r2"></a>
+<!--l. 41--><p class="noindent" ><span 
+class="cmbx-12x-x-144">2</span>    <span 
+class="cmbx-12x-x-144">Related Work</span>
+<a 
+ id="Q1-1-0"></a>
+<!--l. 43--><p class="indent" >   Several genetic algorithms provided efficient solutions for multiobjective optimizations. Some well-known
+multiobjective genetic algorithms are vector evaluated GA <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, Niched Pareto Genetic Algorithm <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, Weight
+Based Genetic Algorithm <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, Non-dominated Sorting Genetic Algorithm (NSGA)<span class="cite">[<span 
+class="cmbx-12">?</span>]</span>, Strength Pareto
+Evolutionary Algorithm (SPEA) <span class="cite">[<span 
+class="cmbx-12">?</span>]</span> and more. General problems with all these multi-objective
+evolutionary algorithms are that computational complexity is <span 
+class="cmmi-12">O</span>(<span 
+class="cmmi-12">MN</span><sup><span 
+class="cmr-8">3</span></sup>) (where M is the number of
+objectives and N is the population size), their non-elitism approach and the need to specify a sharing
+parameter.
+<!--l. 45--><p class="indent" >   In Folino et al. <span class="cite">[<span 
+class="cmbx-12">?</span>]</span> used NSGA2 <span class="cite">[<span 
+class="cmbx-12">?</span>]</span> for detecting communities in dynamic networks. NSGA2 is the improved
+version of NSGA <span class="cite">[<span 
+class="cmbx-12">?</span>]</span> which alleviates all the above three problems by introducing a new selection operator
+which creates a mating pool by combining the parent and offspring populations and used crowding distance for
+diversity preservation.
+<!--l. 47--><p class="indent" >   In our proposed algorithm, we have used SPEA2 <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. SPEA2 is an improved algorithm of SPEA with
+respect to fitness and diversity measurement. SPEA2 used an improved fitness assignment scheme, which takes
+into account how many individuals dominate and dominated by a single individual. SPEA2 used <span 
+class="cmmi-12">k</span>-th nearest
+neighbor to preserve diversity of solutions and gives better quality population in short period of
+time than NSGA2. We have used SPEA2 to predict different cluster of network in different time
+stamp. In next sections we will show, our proposed algorithm gives better result with respect to
+<span class="cite">[<span 
+class="cmbx-12">?</span>]</span>.
+<!--l. 50--><p class="indent" >
+<a 
+ id="x1-4r3"></a>
+
+<!--l. 50--><p class="noindent" ><span 
+class="cmbx-12x-x-144">3</span>    <span 
+class="cmbx-12x-x-144">Problem Formulation</span>
+<a 
+ id="Q1-1-0"></a>
+<!--l. 53--><p class="indent" >   Let <span 
+class="cmsy-10x-x-120">{</span>1<span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,T</span><span 
+class="cmsy-10x-x-120">} </span>be a finite set of time steps and <span 
+class="cmmi-12">V </span>= <span 
+class="cmsy-10x-x-120">{</span>1<span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">V </span><span 
+class="cmsy-10x-x-120">|} </span>be a set of individuals or objects. A static
+network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">t</span></sup> at time <span 
+class="cmmi-12">t </span>can be modeled as a graph <span 
+class="cmmi-12">G</span><sup><span 
+class="cmmi-8">t</span></sup> = (<span 
+class="cmmi-12">V</span> <sup><span 
+class="cmmi-8">t</span></sup><span 
+class="cmmi-12">,E</span><sup><span 
+class="cmmi-8">t</span></sup>) where <span 
+class="cmmi-12">V</span> <sup><span 
+class="cmmi-8">t</span></sup> is a set of objects, called nodes or
+vertices and <span 
+class="cmmi-12">E</span><sup><span 
+class="cmmi-8">t</span></sup> is a set of links, called edges, that connect two elements of <span 
+class="cmmi-12">V</span> <sup><span 
+class="cmmi-8">t</span></sup> at time <span 
+class="cmmi-12">t</span>. Thus <span 
+class="cmmi-12">G</span><sup><span 
+class="cmmi-8">t</span></sup> is the graph
+representing a snapshot of the network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">t</span></sup> at time <span 
+class="cmmi-12">t</span>. An edge (<span 
+class="cmmi-12">u</span><sup><span 
+class="cmmi-8">t</span></sup><span 
+class="cmmi-12">,v</span><sup><span 
+class="cmmi-8">t</span></sup>) <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-32.png" alt="&#x2208;" class="10-120x-x-32" /> </span><span 
+class="cmmi-12">E</span><sup><span 
+class="cmmi-8">t</span></sup> if individual <span 
+class="cmmi-12">u </span>and <span 
+class="cmmi-12">v </span>have interacted
+at time <span 
+class="cmmi-12">t</span>.
+<!--l. 55--><p class="indent" >   A dynamic network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /> </span>is a sequence of static networks <span 
+class="cmsy-10x-x-120">{<img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">T</span> </sup><span 
+class="cmsy-10x-x-120">}</span>, where each network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">t</span></sup> is a snapshot
+of the network at timestamp <span 
+class="cmmi-12">t</span>. A cluster in a static network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">t</span></sup> is a group of vertices consisting of a subset of
+<span 
+class="cmmi-12">V</span> <sup><span 
+class="cmmi-8">t</span></sup> having a high density of edges inside the cluster and a lower density of edges outside of the cluster <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. Let
+<span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">t</span></sup> is a sub-graph of <span 
+class="cmmi-12">G</span><sup><span 
+class="cmmi-8">t</span></sup> be a cluster at time <span 
+class="cmmi-12">t</span>. A clustering <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sup><span 
+class="cmmi-8">t</span></sup> = <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">C</span><sub>
+<span 
+class="cmr-8">1</span></sub><sup><span 
+class="cmmi-8">t</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,C</span><sub>
+<span 
+class="cmmi-8">k</span></sub><sup><span 
+class="cmmi-8">t</span></sup><span 
+class="cmsy-10x-x-120">} </span>of network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">t</span></sup> at time <span 
+class="cmmi-12">t </span>is a
+partitioning of the graph <span 
+class="cmmi-12">G</span><sup><span 
+class="cmmi-8">t</span></sup> in groups of nodes such that for each couple of groups or communities <span 
+class="cmmi-12">C</span><sub>
+<span 
+class="cmmi-8">i</span></sub><sup><span 
+class="cmmi-8">t</span></sup> and
+<span 
+class="cmmi-12">C</span><sub><span 
+class="cmmi-8">j</span></sub><sup><span 
+class="cmmi-8">t</span></sup> <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-32.png" alt="&#x2208;" class="10-120x-x-32" /></span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sup><span 
+class="cmmi-8">t</span></sup> and <span 
+class="cmmi-12">V </span><sub>
+<span 
+class="cmmi-8">i</span></sub><sup><span 
+class="cmmi-8">t</span></sup> <span 
+class="cmsy-10x-x-120">&#x2229; </span><span 
+class="cmmi-12">V </span><sub>
+<span 
+class="cmmi-8">j</span></sub><sup><span 
+class="cmmi-8">t</span></sup> = <span 
+class="cmsy-10x-x-120">&#x2205;</span>.
+<!--l. 57--><p class="indent" >   A multiobjective optimization problem deals with more than one objective functions that are to be
+minimized or maximized. These objectives can be conflicting, subject to certain constraints and often lead to
+choosing the best trade-off among them. Evolutionary clustering comprises of two conflicting objective
+functions to optimize.
+<!--l. 59--><p class="indent" >
+<a 
+ id="x1-5r1"></a>
+<!--l. 59--><p class="noindent" ><span 
+class="cmbx-12x-x-120">3.1</span>   <span 
+class="cmbx-12x-x-120">Multiobjective Evolutionary Clustering</span>
+<a 
+ id="Q1-1-0"></a>
+<!--l. 61--><p class="indent" >   A multiobjective evolutionary clustering problem (&#x03A9;<span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-46.png" alt="F" class="10-120x-x-46" /></span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-46.png" alt="F" class="10-120x-x-46" /></span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-46.png" alt="F" class="10-120x-x-46" /></span><sub><span 
+class="cmmi-8">h</span></sub>) for a static network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">t</span></sup> can be
+defined as <span 
+class="cmmi-12">min</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-46.png" alt="F" class="10-120x-x-46" /></span><sub><span 
+class="cmmi-8">i</span></sub>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sup><span 
+class="cmmi-8">t</span></sup>), <span 
+class="cmmi-12">i </span>= 1<span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,h </span>where &#x03A9; = <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub>
+<span 
+class="cmr-8">1</span></sub><sup><span 
+class="cmmi-8">t</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub>
+<span 
+class="cmmi-8">k</span></sub><sup><span 
+class="cmmi-8">t</span></sup><span 
+class="cmsy-10x-x-120">} </span>is the set of feasible clusters of <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">t</span></sup> at
+time stamp <span 
+class="cmmi-12">t</span>, and <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-46.png" alt="F" class="10-120x-x-46" /> </span>= <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-46.png" alt="F" class="10-120x-x-46" /></span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-46.png" alt="F" class="10-120x-x-46" /></span><sub><span 
+class="cmmi-8">h</span></sub> is a set of <span 
+class="cmmi-12">h </span>single criterion functions <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. Each <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-46.png" alt="F" class="10-120x-x-46" /></span><sub><span 
+class="cmmi-8">i</span></sub>: &#x03A9; <span 
+class="cmsy-10x-x-120">&#x2192; </span><span 
+class="cmmi-12">R </span>is
+a different objective function that determines the feasibility of the clustering obtained. <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-46.png" alt="F" class="10-120x-x-46" /> </span>is a
+vector of conflicting objectives that must be simultaneously optimized, there is not one unique
+solution to the problem, but a set of solutions are found through the use of Pareto optimality theory
+<span class="cite">[<span 
+class="cmbx-12">?</span>]</span>.
+<!--l. 63--><p class="indent" >   Given two solution <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub><span 
+class="cmr-8">1</span></sub> and <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub><span 
+class="cmr-8">2</span></sub> <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-32.png" alt="&#x2208;" class="10-120x-x-32" /> </span>&#x03A9;, solution <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub><span 
+class="cmr-8">1</span></sub> is said to dominate solution <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub><span 
+class="cmr-8">2</span></sub>, denoted as
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub><span 
+class="cmr-8">1</span></sub> <span 
+class="cmsy-10x-x-120">&#x227A;</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub><span 
+class="cmr-8">2</span></sub>, if and only if ,
+
+   <center class="math-display" >
+<img 
+src="duasenewup0x.png" alt="&#x2200;i:Fi (CR1 ) &#x2264; Fi(CR2 ) &#x2227; &#x2203;i Fi(CR1 ) &#x003C; Fi(CR2 )
+" class="math-display" ></center>
+<!--l. 63--><p class="nopar" >
+<!--l. 65--><p class="indent" >   That is, all the objective function of <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub><span 
+class="cmr-8">1</span></sub> should be better or equal to <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub><span 
+class="cmr-8">2</span></sub> and at least one objective
+function is better than <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub><span 
+class="cmr-8">2</span></sub>. On the other hand, non-dominated solutions is one for which an upgrading in one
+objective need a ruin of another. These solutions are called Pareto-optimal. Formally the set of Pareto-optimal
+solutions &#x03A0; is defined as
+   <center class="math-display" >
+<img 
+src="duasenewup1x.png" alt="&#x03A0; = {CR  &#x2208; &#x03A9;:  &#x2200;CR &#x2032; &#x2208; &#x03A9; with CR &#x2032; &#x227A; CR }
+" class="math-display" ></center>
+<!--l. 65--><p class="nopar" >
+<!--l. 69--><p class="indent" >
+<a 
+ id="x1-6r1"></a>
+<!--l. 69--><p class="noindent" ><span 
+class="cmbx-12">3.1.1</span>   <span 
+class="cmbx-12">Snapshot cost</span>
+<a 
+ id="Q1-1-0"></a>
+<!--l. 70--><p class="indent" >   Snapshot Cost (<span 
+class="cmmi-12">SC</span>) measures how well a cluster <span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">t</span></sup> represents the network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">t</span></sup> at time <span 
+class="cmmi-12">t</span>. <span 
+class="cmti-12">Community Score</span>
+is very effective to detect snapshot cost of cluster <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. Let <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sup><span 
+class="cmmi-8">t</span></sup> = <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">C</span><sub>
+<span 
+class="cmr-8">1</span></sub><sup><span 
+class="cmmi-8">t</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,C</span><sub>
+<span 
+class="cmmi-8">k</span></sub><sup><span 
+class="cmmi-8">t</span></sup><span 
+class="cmsy-10x-x-120">} </span>be a clustering of a network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">t</span></sup>
+of graph <span 
+class="cmmi-12">G</span><sup><span 
+class="cmmi-8">t</span></sup> at time <span 
+class="cmmi-12">t</span>. The <span 
+class="cmmi-12">community score </span>of <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sup><span 
+class="cmmi-8">t</span></sup> is defined as follows,
+   <table 
+class="equation"><tr><td>
+   <center class="math-display" >
+<img 
+src="duasenewup2x.png" alt="             k
+       t    &#x2211;          t
+CS (CR  ) =    score(C i)
+            i=1
+" class="math-display" ><a 
+ id="x1-7r1"></a></center></td><td class="equation-label">(1)</td></tr></table>
+<!--l. 72--><p class="nopar" >
+where
+   <table 
+class="equation"><tr><td>
+   <center class="math-display" >
+<img 
+src="duasenewup3x.png" alt="            &#x2211;          2
+        t   --j&#x2208;Ct-(&#x03BC;j)-   &#x2211;     t
+score(Ci) =     |Ct|    &#x00D7;       Aij
+                          i,j&#x2208;Ct
+" class="math-display" ><a 
+ id="x1-8r2"></a></center></td><td class="equation-label">(2)</td></tr></table>
+<!--l. 76--><p class="nopar" >
+<!--l. 78--><p class="indent" >   In equation (<a 
+href="#x1-8r2">2<!--tex4ht:ref: eq:two --></a>),second term represents number of edge connecting nodes inside the community <span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">t</span></sup>. The first
+term computes the square mean of,
+   <table 
+class="equation"><tr><td>
+   <center class="math-display" >
+<img 
+src="duasenewup4x.png" alt="&#x03BC; =  -1-- &#x2211;   At
+ i   |Ct|j&#x2208;Ct  ij
+" class="math-display" ><a 
+ id="x1-9r3"></a></center></td><td class="equation-label">(3)</td></tr></table>
+
+<!--l. 78--><p class="nopar" >
+where <span 
+class="cmmi-12">A</span><sub><span 
+class="cmmi-8">ij</span></sub><sup><span 
+class="cmmi-8">t</span></sup> is the adjacency matrix of 1 and 0. In equation (<a 
+href="#x1-8r2">2<!--tex4ht:ref: eq:two --></a>) and (<a 
+href="#x1-9r3">3<!--tex4ht:ref: eq:three --></a>) <span 
+class="cmmi-12">&#x03BC;</span><sub>
+<span 
+class="cmmi-8">i</span></sub> how tightly a node <span 
+class="cmmi-12">i </span>is connected in
+the cluster <span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">t</span></sup> by fraction of edge connection inside <span 
+class="cmmi-12">C</span><sup><span 
+class="cmmi-8">t</span></sup>. Thus according to equation (<a 
+href="#x1-7r1">1<!--tex4ht:ref: eq:one --></a>), (<a 
+href="#x1-8r2">2<!--tex4ht:ref: eq:two --></a>) and (<a 
+href="#x1-9r3">3<!--tex4ht:ref: eq:three --></a>) the
+objective function <span 
+class="cmmi-12">community score </span>is considering the number of interconnection inside the community and
+also outside the community. More the <span 
+class="cmmi-12">community score</span>, more the cluster represents the current network
+<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">t</span></sup>.<br 
+class="newline" />
+<!--l. 83--><p class="indent" >
+<a 
+ id="x1-10r2"></a>
+<!--l. 83--><p class="noindent" ><span 
+class="cmbx-12">3.1.2</span>   <span 
+class="cmbx-12">Temporal cost</span>
+<a 
+ id="Q1-1-0"></a>
+<!--l. 84--><p class="indent" >   The algorithm should maintain the similarity between the current clusters to the previous time steps
+clusters. Normalized Mutual Information (<span 
+class="cmmi-12">NMI</span>), well known entropy measure in information theory, can
+be used to measure temporal cost. Let two clusters <span 
+class="cmmi-12">A </span>= <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">A</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,A</span><sub><span 
+class="cmmi-8">n</span></sub><span 
+class="cmsy-10x-x-120">} </span>and <span 
+class="cmmi-12">B </span>= <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">B</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,B</span><sub><span 
+class="cmmi-8">m</span></sub><span 
+class="cmsy-10x-x-120">} </span>of a
+network. let <span 
+class="cmmi-12">M </span>be the confusion matrix whose cell <span 
+class="cmmi-12">M</span><sub><span 
+class="cmmi-8">ij</span></sub> represents how many nodes in cluster
+<span 
+class="cmmi-12">A</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-32.png" alt="&#x2208;" class="10-120x-x-32" /> </span><span 
+class="cmmi-12">A </span>that are also in the cluster <span 
+class="cmmi-12">B</span><sub><span 
+class="cmmi-8">j</span></sub> <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-32.png" alt="&#x2208;" class="10-120x-x-32" /> </span><span 
+class="cmmi-12">B</span>. The Normalized Mutual Information (<span 
+class="cmmi-12">NMI</span>) is defined
+as,
+   <table 
+class="equation"><tr><td>
+   <center class="math-display" >
+<img 
+src="duasenewup5x.png" alt="                       - 2 &#x2211;n m&#x2211;  M   log -MijN-
+                           i=1 j=1   ij   Mi.M.j
+N M I (A, B ) = &#x2211;n-------------------m&#x2211;------------------
+                  Mi.log (Mi.&#x2215;N ) +    M.j log (M.j&#x2215;N )
+               i=1                  j=1
+" class="math-display" ><a 
+ id="x1-11r4"></a></center></td><td class="equation-label">(4)</td></tr></table>
+<!--l. 87--><p class="nopar" >
+
+<!--l. 89--><p class="indent" >   where <span 
+class="cmmi-12">n </span>and <span 
+class="cmmi-12">m </span>are number of groups of the clustering A and B respectively, <span 
+class="cmmi-12">M</span><sub><span 
+class="cmmi-8">i.</span></sub> and <span 
+class="cmmi-12">M</span><sub><span 
+class="cmmi-8">.j</span></sub> are sum of the
+<span 
+class="cmmi-12">i </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">th </span>row and sum of the <span 
+class="cmmi-12">j </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">th </span>column of confusion matrix <span 
+class="cmmi-12">M </span>respectively and N is the number of nodes in
+the network. <span 
+class="cmmi-12">NMI </span>is a value between 0 and 1. If clustering <span 
+class="cmmi-12">A </span>and <span 
+class="cmmi-12">B </span>are same, that is <span 
+class="cmmi-12">A </span>= <span 
+class="cmmi-12">B</span>, then
+<span 
+class="cmmi-12">NMI</span>(<span 
+class="cmmi-12">A,B</span>) = 1 and if A and B are completely different then <span 
+class="cmmi-12">NMI</span>(<span 
+class="cmmi-12">A,B</span>) = 0. Thus the objective function for
+this problem <span 
+class="cmmi-12">NMI</span>(<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sup><span 
+class="cmmi-8">t</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sup><span 
+class="cmmi-8">t</span><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">1</span></sup>) are to be maximized.
+<!--l. 92--><p class="indent" >
+<a 
+ id="x1-12r2"></a>
+<!--l. 92--><p class="noindent" ><span 
+class="cmbx-12x-x-120">3.2</span>   <span 
+class="cmbx-12x-x-120">Multiobjective Genetic Algorithm</span>
+<a 
+ id="Q1-1-0"></a>
+<!--l. 93--><p class="indent" >   Genetic Algorithms (<span 
+class="cmmi-12">GA</span>) can provide very efficient solutions for multi-objective optimizations. A generic
+single objective GA can be modified to find a set of multiple non-dominated solutions in clustering method. A
+multi-objective GA should have a good fitness function, should preserve the diversity and should maintain
+elitism.
+<!--l. 95--><p class="indent" >
+<a 
+ id="x1-13r4"></a>
+<!--l. 95--><p class="noindent" ><span 
+class="cmbx-12x-x-144">4</span>    <span 
+class="cmbx-12x-x-144">Proposed Algorithm</span>
+<a 
+ id="Q1-1-0"></a>
+<!--l. 96--><p class="indent" >   The proposed algorithm takes a dynamic network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /> </span>= <span 
+class="cmsy-10x-x-120">{<img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sub><span 
+class="cmmi-8">T</span> </sub><span 
+class="cmsy-10x-x-120">}</span>, the sequence of graphs
+<span 
+class="cmmi-12">G </span>= <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">G</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-12">,G</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,G</span><sub><span 
+class="cmmi-8">T</span> </sub><span 
+class="cmsy-10x-x-120">} </span>and the number of timestamps <span 
+class="cmmi-12">T </span>as input and gives a clustering of each network <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sub><span 
+class="cmmi-8">i</span></sub> of <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span>
+as output.
+<a 
+ id="x1-14r1"></a>
+<!--l. 97--><p class="noindent" ><span 
+class="cmbx-12x-x-120">4.1</span>   <span 
+class="cmbx-12x-x-120">Initialization</span>
+<a 
+ id="Q1-1-0"></a>
+<!--l. 98--><p class="indent" >   For the first timestamp of first input network there is no temporal relation with the previous network. The
+clustering algorithm is applied only in snapshot cost.
+<a 
+ id="x1-15r2"></a>
+<!--l. 99--><p class="noindent" ><span 
+class="cmbx-12x-x-120">4.2</span>   <span 
+class="cmbx-12x-x-120">Population from Graph</span>
+
+<a 
+ id="Q1-1-0"></a>
+<!--l. 100--><p class="indent" >   As a first step in each timestamp from 2nd timestamp to <span 
+class="cmmi-12">T</span>, it creates a population of random individuals.
+Each individual is a vector of length equal to number of nodes in the graph <span 
+class="cmmi-12">G</span><sup><span 
+class="cmmi-8">t</span></sup>. <hr class="figure"><div class="figure" 
+><table class="figure"><tr class="figure"><td class="figure" 
+>
+
+
+<a 
+ id="x1-16r1"></a>
+   Figure&#x00A0;1: Network of 7 nodes clustered into <span 
+class="cmsy-10x-x-120">{</span>1,2,3,4<span 
+class="cmsy-10x-x-120">} </span>and <span 
+class="cmsy-10x-x-120">{</span>5,6,7<span 
+class="cmsy-10x-x-120">} </span>and their genetic reprsentation
+
+<!--l. 106--><p class="indent" >   </td></tr></table></div><hr class="endfigure">
+<a 
+ id="x1-17r3"></a>
+<!--l. 107--><p class="noindent" ><span 
+class="cmbx-12x-x-120">4.3</span>   <span 
+class="cmbx-12x-x-120">Decoding</span>
+<a 
+ id="Q1-1-1"></a>
+<!--l. 108--><p class="indent" >   As each individual gene is working as an adjacency list, if a node in <span 
+class="cmmi-12">u </span>of graph is reachable from <span 
+class="cmmi-12">v </span>by
+maintaining the edges in the individual, then <span 
+class="cmmi-12">u </span>and <span 
+class="cmmi-12">v </span>is in same cluster of component.
+<a 
+ id="x1-18r4"></a>
+<!--l. 109--><p class="noindent" ><span 
+class="cmbx-12x-x-120">4.4</span>   <span 
+class="cmbx-12x-x-120">Evaluation</span>
+<a 
+ id="Q1-1-1"></a>
+<!--l. 110--><p class="indent" >   In this algorithm the evaluation phase consist of calculating community score, which defines how better is
+the current clustering with respect to the given network and normalized mutual information (<span 
+class="cmmi-12">NMI</span>), which
+defines the clustering fluctuation from the previous timestamp.
+<a 
+ id="x1-19r5"></a>
+<!--l. 111--><p class="noindent" ><span 
+class="cmbx-12x-x-120">4.5</span>   <span 
+class="cmbx-12x-x-120">Assign Rank</span>
+<a 
+ id="Q1-1-1"></a>
+<!--l. 112--><p class="indent" >   Each individual of the population and archive is given a rank value, the smaller the better. After giving each
+individuals a rank value, sort the individuals according to the ascending rank.
+   <table 
+class="equation"><tr><td>
+   <center class="math-display" >
+<img 
+src="duasenewup6x.png" alt="       &#x2211;
+r(v) =       s(u)
+         v&#x227A;u
+" class="math-display" ><a 
+ id="x1-20r5"></a></center></td><td class="equation-label">(5)</td></tr></table>
+
+<!--l. 116--><p class="nopar" >
+<!--l. 118--><p class="indent" >
+<a 
+ id="x1-21r6"></a>
+<!--l. 118--><p class="noindent" ><span 
+class="cmbx-12x-x-120">4.6</span>   <span 
+class="cmbx-12x-x-120">Fitness Function</span>
+<a 
+ id="Q1-1-1"></a>
+<!--l. 119--><p class="indent" >   To remain the population diverse, we are using distance of <span 
+class="cmmi-12">k </span><span 
+class="cmsy-10x-x-120">-</span><span 
+class="cmmi-12">th </span>nearest neighbor. The fitness value of each
+individual is the sum of its non-dominated rank and the inverse of the distance of <span 
+class="cmmi-12">k </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">th </span>nearest neighbors
+distance.
+   <table 
+class="equation"><tr><td>
+   <center class="math-display" >
+<img 
+src="duasenewup7x.png" alt="                      -1
+f (v ) = r (v ) + (&#x03C3;kv + 1)
+" class="math-display" ><a 
+ id="x1-22r6"></a></center></td><td class="equation-label">(6)</td></tr></table>
+<!--l. 123--><p class="nopar" >
+where <span 
+class="cmmi-12">&#x03C3;</span><sub><span 
+class="cmmi-8">v</span></sub><sup><span 
+class="cmmi-8">k</span></sup> is the distance between individual <span 
+class="cmmi-12">v </span>and its <span 
+class="cmmi-12">k </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">th </span>nearest neighbor.
+<a 
+ id="x1-23r7"></a>
+<!--l. 125--><p class="noindent" ><span 
+class="cmbx-12x-x-120">4.7</span>   <span 
+class="cmbx-12x-x-120">Population Selection</span>
+<a 
+ id="Q1-1-1"></a>
+<!--l. 126--><p class="indent" >   From the total individuals of population and archive population size individuals are selected as new
+population. From the rank 0 to the highest rank, all the individuals are added if number of population of this
+rank is not exceeding the current population size. If it is exceeding, then some individuals are truncated
+according to the value of each individuals.
+
+<a 
+ id="x1-24r8"></a>
+<!--l. 127--><p class="noindent" ><span 
+class="cmbx-12x-x-120">4.8</span>   <span 
+class="cmbx-12x-x-120">Mating Pool Creation</span>
+<a 
+ id="Q1-1-1"></a>
+<!--l. 128--><p class="indent" >   A mating pool is created of pool size from the new population to apply the genetic variation
+operators. To choose the mating pool, binary tournament with replacement has been used in this
+algorithm.
+<a 
+ id="x1-25r9"></a>
+<!--l. 129--><p class="noindent" ><span 
+class="cmbx-12x-x-120">4.9</span>   <span 
+class="cmbx-12x-x-120">Genetic Variation Operators</span>
+<a 
+ id="Q1-1-1"></a>
+<!--l. 130--><p class="indent" >   Genetic operators are used to create offspring from parent or mating pool. There are two widely used
+genetic variation operators namely crossover and mutation. In the following subsection a short description of
+these two operators is given.
+<!--l. 133--><p class="indent" >
+<a 
+ id="x1-26r1"></a>
+<!--l. 133--><p class="noindent" ><span 
+class="cmbx-12">4.9.1</span>   <span 
+class="cmbx-12">Crossover</span>
+<a 
+ id="Q1-1-1"></a>
+<!--l. 134--><p class="indent" >   In this algorithm we are using uniform crossover. A random bit vector of length of number of the node in
+the current graph is created. If <span 
+class="cmmi-12">i </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">th </span>bit is 0 then the value of the <span 
+class="cmmi-12">i </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">th </span>gene comes from the first parent
+otherwise it comes from the <span 
+class="cmmi-12">i </span><span 
+class="cmsy-10x-x-120">- </span><span 
+class="cmmi-12">th </span>gene of second parent. As each of the parents holding true adjacency
+information, the offspring will also hold it.<br 
+class="newline" />
+
+<!--l. 136--><p class="indent" >   <hr class="float"><div class="float" 
+><table class="float"><tr class="float"><td class="float" 
+>
+
+<div class="center" 
+>
+<!--l. 136--><p class="noindent" >
+<div class="tabular"> <table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1"><col 
+id="TBL-2-2"><col 
+id="TBL-2-3"><col 
+id="TBL-2-4"><col 
+id="TBL-2-5"><col 
+id="TBL-2-6"><col 
+id="TBL-2-7"><col 
+id="TBL-2-8"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-1-1"  
+class="td11"> <!--l. 139--><p class="noindent" >Parent1:            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-2"  
+class="td11"> 4  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-3"  
+class="td11"> 3  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-4"  
+class="td11"> 2  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-5"  
+class="td11"> 2  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-6"  
+class="td11"> 6  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-7"  
+class="td11"> 5  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-8"  
+class="td11"> 6  </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-2-1"  
+class="td11"> <!--l. 140--><p class="noindent" >Parent2: </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-2"  
+class="td11"> 3 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-3"  
+class="td11"> 3 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-4"  
+class="td11"> 1 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-5"  
+class="td11"> 5 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-6"  
+class="td11"> 4 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-7"  
+class="td11"> 7 </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-8"  
+class="td11"> 6</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-3-1"  
+class="td11"> <!--l. 141--><p class="noindent" >Mask :               </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-2"  
+class="td11"> 0  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-3"  
+class="td11"> 1  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-4"  
+class="td11"> 1  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-5"  
+class="td11"> 0  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-6"  
+class="td11"> 0  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-7"  
+class="td11"> 1  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-8"  
+class="td11"> 1  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-4-1"  
+class="td11"> <!--l. 142--><p class="noindent" >Offspring:           </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-2"  
+class="td11"> 4  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-3"  
+class="td11"> 3  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-4"  
+class="td11"> 1  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-5"  
+class="td11"> 2  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-6"  
+class="td11"> 6  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-7"  
+class="td11"> 7  </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-8"  
+class="td11"> 6  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-5-1"  
+class="td11">                </td></tr></table></div></div>
+<a 
+ id="x1-27r1"></a>
+                               Table&#x00A0;1: Example of Uniform Crossover
+
+   </td></tr></table></div><hr class="endfloat" />
+<a 
+ id="x1-28r2"></a>
+<!--l. 148--><p class="noindent" ><span 
+class="cmbx-12">4.9.2</span>   <span 
+class="cmbx-12">Mutation</span>
+<a 
+ id="Q1-1-2"></a>
+<!--l. 149--><p class="indent" >   To mutate and create a offspring, some position of the of the individuals are chosen randomly and changed
+to other values. But the value should be one of its neighbors in the current graph.
+<a 
+ id="x1-29r10"></a>
+<!--l. 150--><p class="noindent" ><span 
+class="cmbx-12x-x-120">4.10</span>   <span 
+class="cmbx-12x-x-120">Archive</span>
+<a 
+ id="Q1-1-2"></a>
+<!--l. 151--><p class="indent" >   After variation operators over the offspring becomes the new population and the old populations are saved
+to the archive. To fit the archive size, the truncation mechanism used here also. <br 
+class="newline" />
+   <div class="algorithm">
+
+<!--l. 156--><p class="indent" >   <hr class="float"><div class="float" 
+><table class="float"><tr class="float"><td class="float" 
+>
+
+<a 
+ id="x1-30r1"></a>
+ Algorithm 1: Algorithm: New Clustering Algorithm using Multiobjective Optimization (NECAMO)
+[1] NECAMO<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /> </span>= <span 
+class="cmsy-10x-x-120">{<img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,</span><span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmmi-8">T</span> </sup><span 
+class="cmsy-10x-x-120">} </span>a dynamic network of graph <span 
+class="cmmi-12">G </span>= <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">G</span><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,G</span><sup><span 
+class="cmmi-8">T</span> </sup><span 
+class="cmsy-10x-x-120">}</span>
+<!--l. 161--><p class="noindent" >Generate initial cluster <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /><img 
+src="cmsy10-c-52.png" alt="R" class="10-120x-x-52" /></span><sub><span 
+class="cmr-8">1</span></sub> = <span 
+class="cmsy-10x-x-120">{</span><span 
+class="cmmi-12">C</span><sub><span 
+class="cmr-8">1</span></sub><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmmi-12">,</span><span 
+class="cmmi-12">&#x2026;</span><span 
+class="cmmi-12">,C</span><sub>
+<span 
+class="cmmi-8">k</span></sub><sup><span 
+class="cmr-8">1</span></sup><span 
+class="cmsy-10x-x-120">} </span>of thenetwork <span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-4e.png" alt="N" class="10-120x-x-4e" /></span><sup><span 
+class="cmr-8">1</span></sup> by optimizing only (<span 
+class="cmsy-10x-x-120"><img 
+src="cmsy10-c-53.png" alt="S" class="10-120x-x-53" /><img 
+src="cmsy10-c-43.png" alt="C" class="10-120x-x-43" /></span>) let <span 
+class="cmmi-12">t </span>= 2
+<!--l. 165--><p class="noindent" ><span 
+class="cmmi-12">t </span><span 
+class="cmsy-10x-x-120">&#x2264; </span><span 
+class="cmmi-12">T </span>Create initial population of random individual <span 
+class="cmmi-12">P</span><sub><span 
+class="cmr-8">0</span></sub> and set <span 
+class="cmmi-12">E</span><sub><span 
+class="cmr-8">0</span></sub> = <span 
+class="cmsy-10x-x-120">&#x2205;</span><span 
+class="cmmi-12">,i </span>= 0 &#x0394;<span 
+class="cmmi-12">f</span>(<span 
+class="cmmi-12">v</span>) <span 
+class="cmsy-10x-x-120">&#x2265; </span>10<sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">5</span></sup> Select individuals
+from <span 
+class="cmmi-12">E</span><sub><span 
+class="cmmi-8">i</span></sub> for mating pool using binary tournament with replacement Apply crossover and mutation to create <span 
+class="cmmi-12">N</span><sub><span 
+class="cmmi-8">P</span> </sub>
+offspring solutions. Copy offspring to <span 
+class="cmmi-12">P</span><sub><span 
+class="cmmi-8">i</span></sub> Decode each individual of <span 
+class="cmmi-12">P</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmsy-10x-x-120">&#x222A;</span><span 
+class="cmmi-12">E</span><sub><span 
+class="cmmi-8">i</span></sub> Evaluate each individual of <span 
+class="cmmi-12">P</span><sub><span 
+class="cmmi-8">i</span></sub> <span 
+class="cmsy-10x-x-120">&#x222A;</span><span 
+class="cmmi-12">E</span><sub><span 
+class="cmmi-8">i</span></sub>
+and assign fitness value using equation <a 
+href="#x1-22r6">6<!--tex4ht:ref: eq:density --></a>
+<!--l. 173--><p class="noindent" >Copy all non-dominated solutions to <span 
+class="cmmi-12">E</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">+1</span></sub> <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">E</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">+1</span></sub><span 
+class="cmsy-10x-x-120">| </span><span 
+class="cmmi-12">&#x003E; N</span><sub><span 
+class="cmmi-8">E</span></sub> truncate <span 
+class="cmsy-10x-x-120">|</span><span 
+class="cmmi-12">E</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">+1</span></sub><span 
+class="cmsy-10x-x-120">|-</span><span 
+class="cmmi-12">N</span><sub><span 
+class="cmmi-8">E</span></sub> solutions according to maximum
+density value copy best <span 
+class="cmmi-12">N</span><sub><span 
+class="cmmi-8">E</span></sub> <span 
+class="cmsy-10x-x-120">-|</span><span 
+class="cmmi-12">E</span><sub><span 
+class="cmmi-8">i</span><span 
+class="cmr-8">+1</span></sub><span 
+class="cmsy-10x-x-120">| </span>dominated solutions according to their fitness value Set <span 
+class="cmmi-12">i </span>= <span 
+class="cmmi-12">i </span>+ 1
+<span 
+class="cmmi-12">C</span><sub><span 
+class="cmmi-8">t</span></sub> = <span 
+class="cmmi-12">E </span>with highest modularity Set <span 
+class="cmmi-12">t </span>= <span 
+class="cmmi-12">t </span>+ 1 Return the clustering set <span 
+class="cmmi-12">C </span>with best cluster.
+
+   </td></tr></table></div><hr class="endfloat" />
+   </div>
+<a 
+ id="x1-31r5"></a>
+<!--l. 190--><p class="noindent" ><span 
+class="cmbx-12x-x-144">5</span>    <span 
+class="cmbx-12x-x-144">Performance Analysis</span>
+<a 
+ id="Q1-1-3"></a>
+<!--l. 191--><p class="indent" >   NMI and modularity are calculated as a measure of performance. Modularity defines the goodness of a
+clustering. Good clustering, which have high value of modularity, are those in which there are dense internal
+connections between the nodes within cluster but only sparse connections between different clusters. In this
+algorithm we use the modularity, introduced by Girvan and Newman <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. Let <span 
+class="cmmi-12">k </span>be the number of clusters found
+inside a network, the modularity <span 
+class="cmmi-12">Q </span>is defined as,
+   <table 
+class="equation"><tr><td>
+   <center class="math-display" >
+<img 
+src="duasenewup8x.png" alt="      k  &#x230A;     (    )2 &#x230B;
+Q  = &#x2211;   &#x2308;lC--   dC--  &#x2309;
+     C=1  m      2m
+" class="math-display" ><a 
+ id="x1-32r7"></a></center></td><td class="equation-label">(7)</td></tr></table>
+<!--l. 194--><p class="nopar" >
+where <span 
+class="cmmi-12">m </span>is the number of edges of the network, <span 
+class="cmmi-12">l</span><sub><span 
+class="cmmi-8">C</span></sub> is the total number of edges joining vertices inside the
+cluster <span 
+class="cmmi-12">C</span>, and <span 
+class="cmmi-12">d</span><sub><span 
+class="cmmi-8">C</span></sub> is the sum of the degrees of the nodes of cluster <span 
+class="cmmi-12">C</span>.
+<!--l. 197--><p class="indent" >
+<a 
+ id="x1-33r6"></a>
+<!--l. 197--><p class="noindent" ><span 
+class="cmbx-12x-x-144">6</span>    <span 
+class="cmbx-12x-x-144">Experimental Result</span>
+<a 
+ id="Q1-1-3"></a>
+<!--l. 198--><p class="indent" >   In this section we will discuss the experimental result and its effectiveness and compare the result with one
+
+of the recent the algorithm namely Dyn-Moga proposed by Folino <span 
+class="cmti-12">et. al. </span>in <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. For this purpose we used
+synthetic data as well as real life data. In both cases, our proposed algorithm successfully detects network
+structure and is very competitive with respect to other algorithms. Some standard parameter for the genetic
+algorithm are crossover probability 80%, mutation probability 20% and binary tournament for pool
+selection <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. The population size was 200, archive size of elitism was 200 and number of generations
+300.
+<a 
+ id="x1-34r1"></a>
+<!--l. 200--><p class="noindent" ><span 
+class="cmbx-12x-x-120">6.1</span>   <span 
+class="cmbx-12x-x-120">Synthetic Data</span>
+<a 
+ id="Q1-1-3"></a>
+<!--l. 202--><p class="indent" >   We have created two types of synthetic data, in one number of different cluster in each timestamp is fixed
+and in other one number of cluster changes with timestamp. For the first type of network, we fixed number of
+node 128 and it is divided into 4 groups each of 32 nodes. Each node has average degree of 16. As in
+<span class="cite">[<span 
+class="cmbx-12">?</span>]</span> we have fixed two parameter <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">in</span></sub> and <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">out</span></sub>. Each node has <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">in</span></sub> number of connection to the
+internal nodes in which cluster it is situated and <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">out</span></sub> number of connection to the outside of the
+cluster. These connections are created randomly. Total ten network data has been created for ten
+timestamp.
+<!--l. 205--><p class="indent" >   For the second type of network, we have changed the number of clusters in a timestamp to test whether the
+algorithm can detect the change in network structure. Total number of node this time is 256 and for the
+first timestamp it is divided into 4 clusters, each having 64 nodes. Ten consecutive networks are
+generated by choosing eight nodes from each community and generating new cluster with these 32
+nodes.
+<!--l. 207--><p class="indent" >   <hr class="figure"><div class="figure" 
+><table class="figure"><tr class="figure"><td class="figure" 
+>
+
+
+<a 
+ id="x1-35r2"></a>
+Figure&#x00A0;2: Normalized Mutual Information with fixed clustering when <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">out</span></sub>  = 3 (top) and <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">out</span></sub>  = 5
+(bottom).
+
+<!--l. 213--><p class="indent" >   </td></tr></table></div><hr class="endfigure">
+<!--l. 215--><p class="indent" >   <hr class="figure"><div class="figure" 
+><table class="figure"><tr class="figure"><td class="figure" 
+>
+
+
+<a 
+ id="x1-36r3"></a>
+Figure&#x00A0;3: Normalized Mutual Information with variable clustering when <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">out</span></sub> = 3 (top) and <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">out</span></sub> = 5
+(bottom).
+
+<!--l. 221--><p class="indent" >   </td></tr></table></div><hr class="endfigure">
+<!--l. 223--><p class="indent" >   <hr class="figure"><div class="figure" 
+><table class="figure"><tr class="figure"><td class="figure" 
+>
+
+
+<a 
+ id="x1-37r4"></a>
+                Figure&#x00A0;4: Modularity values obtain with fixed clustering and <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">out</span></sub> = 3
+
+<!--l. 228--><p class="indent" >   </td></tr></table></div><hr class="endfigure">
+<!--l. 230--><p class="indent" >   Figure: <a 
+href="#x1-35r2">2<!--tex4ht:ref: fig:NMI-fixed --></a> shows the obtained result for the synthetic data with fixed number of clustering. In Figure: <a 
+href="#x1-35r2">2<!--tex4ht:ref: fig:NMI-fixed --></a>.1
+shows that <span 
+class="cmmi-12">NMI </span>value with <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">out</span></sub> = 3 for <span class="cite">[<span 
+class="cmbx-12">?</span>]</span> and our proposed algorithm are close but in Figure: <a 
+href="#x1-35r2">2<!--tex4ht:ref: fig:NMI-fixed --></a>.2 our
+algorithm outperforms the <span class="cite">[<span 
+class="cmbx-12">?</span>]</span> algorithm with <span 
+class="cmmi-12">Z</span><sub><span 
+class="cmmi-8">out</span></sub> = 5. According to Figure: <a 
+href="#x1-36r3">3<!--tex4ht:ref: fig:NMI-var --></a> our algorithm is much stable in
+historical aspect with respect to <span class="cite">[<span 
+class="cmbx-12">?</span>]</span>. It also have better modularity in both case of synthetic data compared to
+<span class="cite">[<span 
+class="cmbx-12">?</span>]</span> according to Figure: <a 
+href="#x1-37r4">4<!--tex4ht:ref: fig:synth-modul --></a>.
+<a 
+ id="x1-38r2"></a>
+<!--l. 233--><p class="noindent" ><span 
+class="cmbx-12x-x-120">6.2</span>   <span 
+class="cmbx-12x-x-120">Real-life Data</span>
+<a 
+ id="Q1-1-6"></a>
+<!--l. 234--><p class="indent" >   As real life data set we have chosen the Football
+data<span class="footnote-mark"><a 
+href="duasenewup2.html#fn1x0"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x1-39f0"></a>
+from the United States college football. The football data is from NCAA Football Division 1-A games. Nodes in
+the graph represent the team and edges represent the regular season games between two teams they
+connect. The teams are divided into conferences and they tend to play between members of the same
+conference. Thus the team cluster is assumed to be the conference. We selected 5 years data from 2006
+to 2010 as the 5 timestamps network. Total nodes are 180, 197, 204, 208 and 216 respectively.
+<hr class="figure"><div class="figure" 
+><table class="figure"><tr class="figure"><td class="figure" 
+>
+
+
+<a 
+ id="x1-40r5"></a>
+                  Figure&#x00A0;5: Result obtained with real-life data, NMI and Modularity
+
+<!--l. 241--><p class="indent" >   </td></tr></table></div><hr class="endfigure">
+<!--l. 242--><p class="indent" >   The Figure: <a 
+href="#x1-40r5">5<!--tex4ht:ref: fig:real-data --></a> shows that, our proposed algorithm outperforms the <span class="cite">[<span 
+class="cmbx-12">?</span>]</span> algorithm in case of normalized
+mutual information (Figure: <a 
+href="#x1-40r5">5<!--tex4ht:ref: fig:real-data --></a>.1) and Modularity (Figure: <a 
+href="#x1-40r5">5<!--tex4ht:ref: fig:real-data --></a>.2).<br 
+class="newline" />After these analysis we are claiming that, our proposed algorithm will perform better and give more accurate
+result with compared to previous algorithms on evolutionary clustering.
+<a 
+ id="x1-41r7"></a>
+<!--l. 245--><p class="noindent" ><span 
+class="cmbx-12x-x-144">7</span>    <span 
+class="cmbx-12x-x-144">Conclusion</span>
+<a 
+ id="Q1-1-7"></a>
+<!--l. 246--><p class="indent" >   The need for accuracy and performance in the field of evolutionary algorithm are the reason for our
+algorithm to implement. In this paper we have provided a multiobjective genetic algorithm. The algorithm
+gives best solution which is a trade-off between two objectives current data and displacement from history,
+at each steps of the algorithm. Experimental results on real and synthetic data show that the
+proposed algorithm provides better accuracy compared to previous algorithms in terms of the
+two relevant parameters - accuracy of clustering with respect to current data and drift from the
+clusters found from previous steps. The future work will be to use adjacency list instead of matrix
+for genetic representation and the nature of our algorithm suggest that the proposed algorithm
+can be implemented in parallel system and both future work is expected to improve the time
+complexity.
+    
+</body></html> 
+
+
+

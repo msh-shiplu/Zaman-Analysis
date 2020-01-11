@@ -1,0 +1,11 @@
+<?php
+
+ $con = mysql_connect('localhost','root','Allahisalmighty');
+        mysql_select_db('dsebd',$con);
+        //echo $adr."**\n";
+        if(mysql_error()){
+                echo "Fail to connect in $adr \n";
+                return;
+        }
+	$resumysql_query("SHOW TABLES LIKE '".$table."'")
+?>

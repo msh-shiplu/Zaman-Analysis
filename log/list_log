@@ -1,0 +1,315 @@
+
+
+
+
+
+
+
+
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/company_list_industry.php on line 14
+
+
+
+
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/company_list_industry.php on line 14
+
+
+
+
+
+
+
+
+
+
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/company_list_industry.php on line 14
+
+
+Fail to connect in BDLAMPS 
+
+
+Fail to connect in APOLOISPAT 
+Fail to connect in AZIZPIPES 
+Fail to connect in BDLAMPS 
+
+
+Fail to connect in DEBBXFISH 
+Fail to connect in AFTABAUTO 
+Fail to connect in AZIZPIPES 
+Fail to connect in BSRMLTD 
+
+
+Fail to connect in ATLASBANG 
+Fail to connect in BBS 
+Fail to connect in BENGALWTL 
+Fail to connect in KAYQUE 
+
+
+Fail to connect in DEBARACEM 
+Fail to connect in DEBBDZIPP 
+Fail to connect in APOLOISPAT 
+Fail to connect in GPHISPAT 
+
+
+Fail to connect in AZIZPIPES 
+Fail to connect in QSMDRYCELL 
+
+
+Fail to connect in BDTHAI 
+Fail to connect in GPHISPAT 
+Fail to connect in IFADAUTOS 
+
+
+Fail to connect in ATLASBANG 
+Fail to connect in SINGERBD 
+
+
+Fail to connect in BDTHAI 
+Fail to connect in ECABLES 
+Fail to connect in GOLDENSON 
+
+
+Fail to connect in BDAUTOCA 
+Fail to connect in SHURWID 
+
+
+Fail to connect in DEBBXKNI 
+Fail to connect in DEBBXTEX 
+Fail to connect in ANWARGALV 
+Fail to connect in ATLASBANG 
+Fail to connect in BSRMLTD 
+Fail to connect in DESHBANDHU 
+Fail to connect in RSRMSTEEL 
+
+
+Fail to connect in ATLASBANG 
+Fail to connect in BDLAMPS 
+Fail to connect in BSRMLTD 
+Fail to connect in DESHBANDHU 
+Fail to connect in OAL 
+Fail to connect in RANFOUNDRY 
+Fail to connect in SINGERBD 
+Fail to connect in ICB 
+
+
+Fail to connect in BDLAMPS 
+Fail to connect in FASFIN 
+Fail to connect in PHOENIXFIN 
+
+
+Fail to connect in ATLASBANG 
+Fail to connect in APEXFOODS 
+
+
+Fail to connect in DEBBDWELD 
+Fail to connect in ANWARGALV 
+Fail to connect in RANFOUNDRY 
+Fail to connect in RENWICKJA 
+Fail to connect in ISLAMICFIN 
+
+
+
+
+Ekhane\n
+
+Ekhane\nPHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/company_list_industry.php on line 134
+
+
+Ekhane\nPHP Warning:  fread(): Length parameter must be greater than 0 in /var/www/html/company_list_industry.php on line 134
+
+
+
+
+
+
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='DBH' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='DBH'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='FASFIN' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='FASFIN'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='FIRSTFIN' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='FIRSTFIN'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='IDLC' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='IDLC'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='ILFSL' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='ILFSL'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='LANKABAFIN' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='LANKABAFIN'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='NHFIL' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='NHFIL'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='PLFSL' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='PLFSL'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='PREMIERLEA' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='PREMIERLEA'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='GREENDELT' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='GREENDELT'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='JANATAINS' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='JANATAINS'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='KARNAPHULI' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='KARNAPHULI'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='MERCINS' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='MERCINS'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='NITOLINS' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='NITOLINS'' at line 1
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='PADMALIFE' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='PADMALIFE'' at line 1
+
+
+
+
+
+
+
+
+
+
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=BXPHARMA): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/company_list_industry.php on line 15
+
+
+
+
+
+
+
+
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=DSHGARME): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/company_list_industry.php on line 15
+
+
+
+
+
+
+
+
+PHP Notice:  Undefined offset: 0 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 1 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 2 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 3 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 4 in /var/www/html/company_list_industry.php on line 71
+PHP Notice:  Undefined offset: 5 in /var/www/html/company_list_industry.php on line 71
+update stock_data set PE1=,PE2=,PE3=,PE4=,PE5=,PE6= where company_code='MTB' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PE2=,PE3=,PE4=,PE5=,PE6= where company_code='MTB'' at line 1
+PHP Warning:  pcntl_fork(): Error 12 in /var/www/html/company_list_industry.php on line 56
+PHP Warning:  pcntl_fork(): Error 12 in /var/www/html/company_list_industry.php on line 56
+PHP Warning:  pcntl_fork(): Error 12 in /var/www/html/company_list_industry.php on line 56
+PHP Warning:  pcntl_fork(): Error 12 in /var/www/html/company_list_industry.php on line 56
+PHP Warning:  pcntl_fork(): Error 12 in /var/www/html/company_list_industry.php on line 56
+PHP Warning:  pcntl_fork(): Error 12 in /var/www/html/company_list_industry.php on line 56
+
+
+PHP Warning:  pcntl_fork(): Error 12 in /var/www/html/company_list_industry.php on line 56
+
+
+
+
+
+
+
+
+
+
+
+
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=MAKSONSPIN): failed to open stream: Connection timed out in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/company_list_industry.php on line 15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=NBL): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/company_list_industry.php on line 15
+
+
+PHP Warning:  file_get_contents(http://dsebd.org/companylistbyindustry.php?industryno=11): failed to open stream: Connection timed out in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/company_list_industry.php on line 116
+
+
+
+
+
+

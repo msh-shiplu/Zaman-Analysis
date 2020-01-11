@@ -1,0 +1,106 @@
+
+
+
+
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+
+
+
+
+
+
+
+
+
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+
+
+
+
+
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=AFCAGRO): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=DESHBANDHU): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=IFIC): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=IPDC): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=MIRACLEIND): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=PADMAOIL): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=5THICB): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=MEGHNAPET): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=SAPORTL): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=BATASHOE): failed to open stream: HTTP request failed!  in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+
+
+PHP Warning:  mysql_connect(): Lost connection to MySQL server at 'reading initial communication packet', system error: 104 in /var/www/html/parse_insert3.php on line 77
+PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /var/www/html/parse_insert3.php on line 78
+Fail to connect in DHAKAINS 
+PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /var/www/html/parse_insert3.php on line 77
+PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /var/www/html/parse_insert3.php on line 78
+Fail to connect in BERGERPBL 
+PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /var/www/html/parse_insert3.php on line 77
+PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /var/www/html/parse_insert3.php on line 78
+Fail to connect in BDTHAI 
+PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /var/www/html/parse_insert3.php on line 77
+PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /var/www/html/parse_insert3.php on line 78
+Fail to connect in KPPL 
+PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /var/www/html/parse_insert3.php on line 77
+PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /var/www/html/parse_insert3.php on line 78
+Fail to connect in FIRSTSBANK 
+PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /var/www/html/parse_insert3.php on line 77
+PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /var/www/html/parse_insert3.php on line 78
+Fail to connect in ACI 
+PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /var/www/html/parse_insert3.php on line 77
+PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /var/www/html/parse_insert3.php on line 78
+Fail to connect in EHL 
+PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /var/www/html/parse_insert3.php on line 77
+PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /var/www/html/parse_insert3.php on line 78
+Fail to connect in MJLBD 
+PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /var/www/html/parse_insert3.php on line 77
+PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /var/www/html/parse_insert3.php on line 78
+Fail to connect in ICB 
+
+
+
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=BARKAPOWER): failed to open stream: Cannot assign requested address in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+PHP Warning:  pcntl_fork(): Error 12 in /var/www/html/parse_insert3.php on line 143
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=NORTHRNINS): failed to open stream: Connection timed out in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 63
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=ICBEPMF1S1): failed to open stream: Connection timed out in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+
+PHP Warning:  pcntl_fork(): Error 12 in /var/www/html/parse_insert3.php on line 143
+
+
+
+
+
+PHP Warning:  file_get_contents(http://dsebd.org/company_details_nav.php?name=ABBANK): failed to open stream: Cannot assign requested address in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 12
+
+PHP Warning:  pcntl_fork(): Error 12 in /var/www/html/parse_insert3.php on line 143
+PHP Warning:  mysql_connect(): Can't create UNIX socket (23) in /var/www/html/parse_insert3.php on line 77
+PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /var/www/html/parse_insert3.php on line 78
+Fail to connect in ICB 
+
+PHP Warning:  file_get_contents(http://dsebd.org/by_industrylisting1.php): failed to open stream: Connection timed out in /var/www/html/simple_html_dom.php on line 75
+PHP Fatal error:  Call to a member function find() on a non-object in /var/www/html/parse_insert3.php on line 123
+
+

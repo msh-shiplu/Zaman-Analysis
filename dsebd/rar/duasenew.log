@@ -1,0 +1,280 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.27)  27 FEB 2014 15:34
+entering extended mode
+**duasenew.tex
+(D:\RESEARCHMEETING\13_SHIPLU\4THYEAR\DU_ASE\duasenew.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
+, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
+ian, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
+ kannada, kurmanji, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman
+-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
+ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, w
+elsh, loaded.
+(D:\RESEARCHMEETING\13_SHIPLU\4THYEAR\DU_ASE\arsubmit.cls
+Document Class: arsubmit 1999/01/07 v1.4a Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(C:\Users\smtareeq\AppData\Roaming\MiKTeX\2.9\tex\latex\moreverb\moreverb.sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks15
+\verbatim@line=\toks16
+\verbatim@in@stream=\read1
+)
+\tab@position=\count88
+\tab@size=\count89
+\listing@line=\count90
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen105
+\extrarowheight=\dimen106
+\NC@list=\toks17
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+(C:\Users\smtareeq\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip45
+\subfigcapskip=\skip46
+\subfigcaptopadj=\dimen107
+\subfigbottomskip=\skip47
+\subfigcapmargin=\dimen108
+\subfiglabelskip=\skip48
+\c@subfigure=\count91
+\c@lofdepth=\count92
+\c@subtable=\count93
+\c@lotdepth=\count94
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(C:\Users\smtareeq\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip49
+\subfig@bottom=\skip50
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(C:\Users\smtareeq\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count95
+\float@exts=\toks18
+\float@box=\box26
+\@float@everytoks=\toks19
+\@floatcapt=\box27
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks20
+\c@algorithm=\count96
+)
+(C:\Users\smtareeq\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algpseudocode.sty
+Package: algpseudocode 
+
+(C:\Users\smtareeq\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count97
+\c@ALG@rem=\count98
+\c@ALG@nested=\count99
+\ALG@tlm=\skip51
+\ALG@thistlm=\skip52
+\c@ALG@Lnr=\count100
+\c@ALG@blocknr=\count101
+\c@ALG@storecount=\count102
+\c@ALG@tmpcounter=\count103
+\ALG@tmplength=\skip53
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (D:\RESEARCHMEETING\13_SHIPLU\4THYEAR\DU_ASE\duasenew.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+
+(C:\Users\smtareeq\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count104
+\scratchdimen=\dimen109
+\scratchbox=\box28
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen110
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks22
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 22.
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
+
+ []
+
+[1
+
+{C:/Users/smtareeq/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 43.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 43.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 43.
+ [2] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 78--82
+
+ []
+
+[5] <graph.jpg, id=32, 352.31625pt x 292.09125pt>
+File: graph.jpg Graphic file (type jpg)
+ <use graph.jpg>
+Package pdftex.def Info: graph.jpg used on input line 103.
+(pdftex.def)             Requested size: 264.37225pt x 219.1793pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 104.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 104.
+ [6 <D:/RESEARCHMEETING/13_SHIPLU/4THYEAR/DU_ASE/graph.jpg>] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+[8] [9] [10] <zout3NMI.jpg, id=50, 362.85562pt x 218.31563pt>
+File: zout3NMI.jpg Graphic file (type jpg)
+ <use zout3NMI.jpg>
+Package pdftex.def Info: zout3NMI.jpg used on input line 209.
+(pdftex.def)             Requested size: 264.37225pt x 159.06593pt.
+
+<zout5NMI.jpg, id=51, 362.85562pt x 218.31563pt>
+File: zout5NMI.jpg Graphic file (type jpg)
+ <use zout5NMI.jpg>
+Package pdftex.def Info: zout5NMI.jpg used on input line 210.
+(pdftex.def)             Requested size: 264.37225pt x 159.06593pt.
+ <zout3NMIvar.jpg, id=52, 362.85562pt x 218.31563pt>
+File: zout3NMIvar.jpg Graphic file (type jpg)
+
+<use zout3NMIvar.jpg>
+Package pdftex.def Info: zout3NMIvar.jpg used on input line 217.
+(pdftex.def)             Requested size: 264.37225pt x 159.06593pt.
+ <zout5NMIvar.jpg, id=53, 362.85562pt x 218.31563pt>
+File: zout5NMIvar.jpg Graphic file (type jpg)
+ <use zout5NMIvar.jpg>
+Package pdftex.def Info: zout5NMIvar.jpg used on input line 218.
+(pdftex.def)             Requested size: 264.37225pt x 159.06593pt.
+
+<synth-modul.jpg, id=54, 362.85562pt x 218.31563pt>
+File: synth-modul.jpg Graphic file (type jpg)
+ <use synth-modul.jpg>
+Package pdftex.def Info: synth-modul.jpg used on input line 225.
+(pdftex.def)             Requested size: 264.37225pt x 159.06593pt.
+
+<real-data-NMI.jpg, id=55, 363.60844pt x 219.06844pt>
+File: real-data-NMI.jpg Graphic file (type jpg)
+ <use real-data-NMI.jpg>
+Package pdftex.def Info: real-data-NMI.jpg used on input line 237.
+(pdftex.def)             Requested size: 264.37225pt x 159.2835pt.
+
+<real-modul.jpg, id=56, 363.60844pt x 219.06844pt>
+File: real-modul.jpg Graphic file (type jpg)
+ <use real-modul.jpg>
+Package pdftex.def Info: real-modul.jpg used on input line 238.
+(pdftex.def)             Requested size: 264.37225pt x 159.2835pt.
+ [11 <D:/RESEARCHMEETING/13_SHIPLU/4THYEAR/DU_ASE/zout3NMI.jpg> <D:/RESEARCHMEETING/13_SHIPLU/4THYEAR/DU_ASE/zout5NMI.jp
+g>] [12 <D:/RESEARCHMEETING/13_SHIPLU/4THYEAR/DU_ASE/zout3NMIvar.jpg> <D:/RESEARCHMEETING/13_SHIPLU/4THYEAR/DU_ASE/zout5
+NMIvar.jpg> <D:/RESEARCHMEETING/13_SHIPLU/4THYEAR/DU_ASE/synth-modul.jpg>] [13 <D:/RESEARCHMEETING/13_SHIPLU/4THYEAR/DU_
+ASE/real-data-NMI.jpg> <D:/RESEARCHMEETING/13_SHIPLU/4THYEAR/DU_ASE/real-modul.jpg>] (D:\RESEARCHMEETING\13_SHIPLU\4THYE
+AR\DU_ASE\duasenew.bbl [14] [15]
+Missing character: There is no ’ in font cmti12!
+Missing character: There is no ’ in font cmti12!
+Missing character: There is no ’ in font cmti12!
+Missing character: There is no ’ in font cmti12!
+) [16]
+(D:\RESEARCHMEETING\13_SHIPLU\4THYEAR\DU_ASE\duasenew.aux) ) 
+Here is how much of TeX's memory you used:
+ 2177 strings out of 493921
+ 30256 string characters out of 3147273
+ 87449 words of memory out of 3000000
+ 5458 multiletter control sequences out of 15000+200000
+ 10757 words of font info for 37 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 30i,11n,24p,1119b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on duasenew.pdf (16 pages, 489616 bytes).
+PDF statistics:
+ 130 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+
