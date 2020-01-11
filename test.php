@@ -6,6 +6,13 @@ function parse_company_detail($company_code){
 	$last = '';
         $agm_flag = true;
 	foreach($html->find("#company") as $a){
+                if ($agm_flag){
+                        $st = strstr($a->plaintext, 'Last AGM held on:');
+                        if ($st!==FALSE){
+                                print(substr($st,0, 10));
+                                $agm_flag = false;
+                        }
+                }
 		foreach($a->find('tr td') as $x){
                         if (strstr($last, "Day's Range")!==FALSE){
                                 print(trim($x->plaintext));
