@@ -55,7 +55,7 @@ function parse_company_detail($company_code){
                                 if ($st == '-')
                                         $val = 0;
                                 else
-                                        $val = (int)$st;
+                                        $val = (double)$st;
                                 $pe1[] = $val;
                         }
                         else if(strstr($last, 'Current P/E ratio using Diluted EPS')){
@@ -63,7 +63,7 @@ function parse_company_detail($company_code){
                                 if ($st == '-')
                                         $val = 0;
                                 else
-                                        $val = (int)$st;
+                                        $val = (double)$st;
                                 $pe2[] = $val;
                         }
                         else if($percantage && strstr($last,'Share Holding Percentage')){
@@ -99,8 +99,8 @@ function parse_company_detail($company_code){
                         $last = $x->plaintext;
                 }
         }
-        print($pe1[0]." ".$pe1[1]);
-        print($pe2[0]." ".$pe2[1]);
+        print($pe1[0]." ".$pe1[1]."\n");
+        print($pe2[0]." ".$pe2[1]."\n");
 	// $last = '';
 	// $html->clear();
 	// $html = file_get_html('http://dsebd.org/company_details_nav.php?name='.$company_code);
