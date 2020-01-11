@@ -69,8 +69,6 @@ class Collection_model extends CI_Model{
 					$comp['PE2'] = $row->PE2;
 					$comp['PE3'] = $row->PE3;
 					$comp['PE4'] = $row->PE4;
-					$comp['PE5'] = $row->PE5;
-					$comp['PE6'] = $row->PE6;
 				}
 				$query = $this->db->query('select * from stock_data_detail where company_code=\''.$company->plaintext.'\'');
 				foreach($query->result() as $row){
@@ -78,6 +76,7 @@ class Collection_model extends CI_Model{
 					$comp['public'] = $row->public;
 					$comp['category'] = $row->category;
 					$comp['year_end'] = $row->year_end;
+					$comp['days_range'] = $row->days_range;
 					$comp['week_range'] = $row->week_range;
 					$comp['institute'] = $row->institute;
 					$comp['govt'] = $row->govt;
