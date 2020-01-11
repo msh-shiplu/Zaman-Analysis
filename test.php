@@ -5,7 +5,7 @@ function parse_company_detail($company_code){
 	$html = file_get_html('http://dsebd.org/company_details_nav.php?name='.$company_code);
 	$last = '';
 	$agm_flag = true;
-	foreach($html->find("table[id='company'") as $a){
+	foreach($html->find("#company") as $a){
 		print($a->plaintext);
 	}
 	// $last = '';
