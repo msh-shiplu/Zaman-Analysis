@@ -106,7 +106,7 @@ function parse_company_detail($company_code){
                 foreach($a->find('tr th') as $x){
                         $st = trim($x->plaintext);
                         if (strstr($st, 'Company Name:'))
-                                print(substr($st, 14));
+                                $company_name = trim(substr($st, 14));
                 }
         }
 	// $last = '';

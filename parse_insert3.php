@@ -6,7 +6,7 @@ date_default_timezone_set('Asia/Dhaka');
 //error_reporting(E_ALL & ~E_WARNING);
 function parse_company_detail($company_code){
 	//echo $company_code."\n";
-	$html = file_get_html('http://dsebd.org/company_details_nav.php?name='.$company_code);
+	$html = file_get_html('https://dsebd.org/displayCompany.php?name='.$company_code);
 	$last = '';
 	$agm_flag = true;
 	$percantage = true;
@@ -102,7 +102,14 @@ function parse_company_detail($company_code){
 			
 			$last = $x->plaintext;
 		}
-    }
+	}
+	foreach($html->find("#company") as $a){
+		foreach($a->find('tr th') as $x){
+			$st = trim($x->plaintext);
+				if (strstr($st, 'Company Name:'))
+					$company_name = trim(substr($st, 14));
+		}
+	}
 	$html->clear();
 	unset($html);
 	unset($last);
@@ -128,6 +135,23 @@ function parse_company_detail($company_code){
 	if(mysql_error()){
 		echo $query.' '.mysql_error()."\n";
 	}
+
+	$query = "select * from stock_data where company_code='$company_code';";
+	//echo $query."\n";
+	$result = mysql_query($query);
+	if(mysql_fetch_array($result)){
+		$query = "update stock_data set PE1=$pe1[0], PE2=$pe2[0], PE3=$pe1[1], PE4=$pe2[1] where company_code='$company_code';";
+		mysql_query($query);
+	//	echo $query."\n";
+	}
+	else{
+		$query = "insert into stock_data values('$company_code',$company_name, $pe1[0], $pe2[0],$pe1[1], $pe2[1]);";
+		mysql_query($query);
+	}
+	if(mysql_error()){
+		echo $query.' '.mysql_error()."\n";
+	}
+
 	mysql_close($con);
 	unset($query);
 	unset($result);
