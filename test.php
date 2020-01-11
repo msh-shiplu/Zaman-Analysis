@@ -51,7 +51,7 @@ function parse_company_detail($company_code){
                         }
                         else if($percantage && strstr($last,'Share Holding Percentage')){
                                 foreach($x->find('table tr td') as $y){
-                                        print(trim($y->plaintext)."\n")
+                                        print(trim($y->plaintext)."\n");
                                 }
                                 $percantage = false;
                         }
