@@ -5,7 +5,7 @@ gc_disable();
 date_default_timezone_set('Asia/Dhaka');
 //error_reporting(E_ALL & ~E_WARNING);
 function parse_company_detail($company_code){
-	//echo $company_code."\n";
+	echo $company_code."\n";
 	$html = file_get_html('https://dsebd.org/displayCompany.php?name='.$company_code);
 	$last = '';
 	$agm_flag = true;
@@ -124,12 +124,12 @@ function parse_company_detail($company_code){
 	//echo $query."\n";
 	$result = mysql_query($query);
 	if(mysql_fetch_array($result)){
-		$query = "update stock_data_detail set total=$total, public=$public, category='$category', year_end=$year_end, days_range='$days_range', week_range='$week_range', institute=$institute, govt=$govt, sponsor=$sponsor, forgn=$foreign, market_lot=$market_lot, last_agm='$last_agm', listing_year=$listing_year where company_code='$company_code';";
+		$query = "update stock_data_detail set total=$total, public=$public, category='$category', year_end='$year_end', days_range='$days_range', week_range='$week_range', institute=$institute, govt=$govt, sponsor=$sponsor, forgn=$foreign, market_lot=$market_lot, last_agm='$last_agm', listing_year=$listing_year where company_code='$company_code';";
 		mysql_query($query);
 	//	echo $query."\n";
 	}
 	else{
-		$query = "insert into stock_data_detail values('$company_code',$total, $public, '$category', $year_end,'$days_range', '$week_range', $institute, $govt, $sponsor, $foreign, $market_lot, '$last_agm', $listing_year );";
+		$query = "insert into stock_data_detail values('$company_code',$total, $public, '$category', '$year_end','$days_range', '$week_range', $institute, $govt, $sponsor, $foreign, $market_lot, '$last_agm', $listing_year );";
 		mysql_query($query);
 	}
 	if(mysql_error()){
