@@ -2,7 +2,7 @@
 include_once('/var/www/html/simple_html_dom.php');
 function parse_company_detail($company_code){
 	//echo $company_code."\n";
-	$html = file_get_html('http://dsebd.org/company_details_nav.php?name='.$company_code);
+	$html = file_get_html('https://dsebd.org/displayCompany.php?name='.$company_code);
 	$last = '';
         $agm_flag = true;
         $percantage = true;
