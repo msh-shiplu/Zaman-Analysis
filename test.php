@@ -8,7 +8,7 @@ function parse_company_detail($company_code){
 	foreach($html->find("#company") as $a){
 		foreach($a->find('tr td') as $x){
                         if (strstr($x->plaintext, "Day's Range")!==FALSE){
-                                print($x->plaintext)
+                                print($x->plaintext);
                         }
                 }
 	}
