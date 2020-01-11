@@ -5,6 +5,7 @@ function parse_company_detail($company_code){
 	$html = file_get_html('http://dsebd.org/company_details_nav.php?name='.$company_code);
 	$last = '';
         $agm_flag = true;
+        $percantage = true;
 	foreach($html->find("#company") as $a){
                 if ($agm_flag){
                         $st = strstr($a->plaintext, 'Last AGM held on:');
@@ -16,33 +17,43 @@ function parse_company_detail($company_code){
 				else
 					$last_agm=$st;
                                 $agm_flag = false;
-                                print("AGM: ".$last_agm);
+                                print("AGM: ".$last_agm."\n");
                         }
                 }
 		foreach($a->find('tr td') as $x){
                         if (strstr($last, "Day's Range")!==FALSE){
                                 $days_range = trim($x->plaintext);
-                                print("Days Range: ".$days_range);
+                                print("Days Range: ".$days_range."\n");
                         }
                         else if (strstr($last, "52 Weeks' Moving Range")!==FALSE){
                                 $week_range = trim($x->plaintext);
-                                print("Week Range: ".$week_range);
+                                print("Week Range: ".$week_range."\n");
                         }
                         else if (strstr($last, "Total No. of Outstanding Securities")!==FALSE){
                                 $total = intval(str_replace(',','',$x->plaintext));
-                                print("Total: ".$total);
+                                print("Total: ".$total."\n");
                         }
                         else if($last == 'Market Lot'){
                                 sscanf($x->plaintext,"%d",$market_lot);
-                                print("market lot: ".$market_lot);
+                                print("market lot: ".$market_lot."\n");
                         }
                         else if (strstr($last, "Year End")!==FALSE){
                                 $year_end = trim($x->plaintext);
-                                print("Year end: ".$year_end);
+                                print("Year end: ".$year_end."\n");
                         }
                         else if(strstr($last,'Listing Year')){
                                 sscanf($x->plaintext,"%d",$listing_year);
-                                print("listing year: ".$listing_year);
+                                print("listing year: ".$listing_year."\n");
+                        }
+                        else if(strstr($last,'Market Category')){
+                                $category = trim($x->plaintext);
+                                print("Category: ".$category."\n");
+                        }
+                        else if($percantage && strstr($last,'Share Holding Percentage')){
+                                foreach($x->find('table tr td') as $y){
+                                        print(trim($y->plaintext)."\n")
+                                }
+                                $percantage = false;
                         }
                         $last = $x->plaintext;
                 }
