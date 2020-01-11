@@ -9,6 +9,7 @@ function parse_company_detail($company_code){
                 if ($agm_flag){
                         $st = strstr($a->plaintext, 'Last AGM held on:');
                         if ($st!==FALSE){
+                                if (strlen($st))
                                 print(substr($st,18, 10));
                                 $agm_flag = false;
                         }
@@ -64,6 +65,6 @@ function parse_company_detail($company_code){
 	// unset($result);
 	// unset($con);
 }
-parse_company_detail('ABBANK');
+parse_company_detail('ABB1STMF');
 ?>
 
