@@ -99,8 +99,8 @@ function parse_company_detail($company_code){
                         $last = $x->plaintext;
                 }
         }
-        print($pe1);
-        print($pe2);
+        print($pe1[0]." ".$pe1[1]);
+        print($pe2[0]." ".$pe2[1]);
 	// $last = '';
 	// $html->clear();
 	// $html = file_get_html('http://dsebd.org/company_details_nav.php?name='.$company_code);
