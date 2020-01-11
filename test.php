@@ -51,7 +51,7 @@ function parse_company_detail($company_code){
                         }
                         else if($percantage && strstr($last,'Share Holding Percentage')){
                                 foreach($x->find('table tr td') as $y){
-                                        $st = trime($y->plaintext);
+                                        $st = trim($y->plaintext);
                                         if (strstr($st, 'Sponsor'))
                                                 print("Sponsor: ".substr($st, 18)."\n");
                                         else if(strstr($st, 'Govt'))
